@@ -112,9 +112,10 @@ header.top-nav {
 /* line 1, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro {
   width: 100%;
+  margin-bottom: 100px;
 }
 
-/* line 3, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 4, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content {
   width: 80%;
   margin: 0 auto;
@@ -124,21 +125,21 @@ section.intro .intro-content {
   padding-top: 60px;
 }
 
-/* line 11, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 12, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left h2 {
   font-size: 3.5rem;
   color: #372865;
   margin-bottom: 15px;
 }
 
-/* line 15, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 16, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left h4 {
   color: #372865;
   font-weight: 500;
   margin-bottom: 30px;
 }
 
-/* line 19, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 20, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left .email-input {
   height: 50px;
   position: relative;
@@ -146,7 +147,7 @@ section.intro .intro-content .text-left .email-input {
   justify-content: space-between;
 }
 
-/* line 24, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 25, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left .email-input input {
   border: none;
   border-radius: 25px;
@@ -158,12 +159,12 @@ section.intro .intro-content .text-left .email-input input {
   font-size: 1rem;
 }
 
-/* line 33, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 34, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left .email-input input:focus {
   outline: none;
 }
 
-/* line 35, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 36, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left .email-input a.join-btn {
   position: absolute;
   top: 0;
@@ -177,12 +178,17 @@ section.intro .intro-content .text-left .email-input a.join-btn {
   height: 30px;
 }
 
-/* line 47, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 48, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .image-right img {
   height: 600px;
 }
 
-/* line 2, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+/* line 1, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+section.offer {
+  margin: 100px 0;
+}
+
+/* line 3, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
 section.offer .offer-content {
   width: 80%;
   margin: 0 auto;
@@ -191,7 +197,7 @@ section.offer .offer-content {
   justify-content: space-around;
 }
 
-/* line 9, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+/* line 10, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
 section.offer .offer-content .amt-card-left .amt-card-bg {
   height: 500px;
   width: 400px;
@@ -199,7 +205,7 @@ section.offer .offer-content .amt-card-left .amt-card-bg {
   position: relative;
 }
 
-/* line 14, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+/* line 15, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
 section.offer .offer-content .amt-card-left .amt-card-bg .amt-card {
   background-color: #ffffff;
   border-radius: 15px;
@@ -214,31 +220,50 @@ section.offer .offer-content .amt-card-left .amt-card-bg .amt-card {
   justify-content: center;
 }
 
-/* line 26, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+/* line 27, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
 section.offer .offer-content .amt-card-left .amt-card-bg .amt-card .amt-card-content {
   text-align: center;
 }
 
-/* line 28, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+/* line 29, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
 section.offer .offer-content .amt-card-left .amt-card-bg .amt-card .amt-card-content h4 {
   font-size: 1.3rem;
   color: #5F626F;
 }
 
-/* line 31, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+/* line 32, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
 section.offer .offer-content .amt-card-left .amt-card-bg .amt-card .amt-card-content h3 {
   font-size: 2.8rem;
   color: #0B5548;
 }
 
-/* line 34, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
-section.offer .offer-content .amt-card-left .amt-card-bg .amt-card .amt-card-content input {
+/* line 35, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+section.offer .offer-content .amt-card-left .amt-card-bg .amt-card .amt-card-content input#amount-range {
   width: 100%;
   margin: 0;
   margin-bottom: 40px;
+  -webkit-appearance: none;
+  height: 8px;
+  background-color: #0B5548;
+  border-radius: 5px;
 }
 
-/* line 38, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+/* line 43, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+section.offer .offer-content .amt-card-left .amt-card-bg .amt-card .amt-card-content input#amount-range:focus {
+  outline: none;
+}
+
+/* line 45, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+section.offer .offer-content .amt-card-left .amt-card-bg .amt-card .amt-card-content input#amount-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #0B5548;
+  height: 25px;
+  width: 25px;
+  border: none;
+  border-radius: 50%;
+}
+
+/* line 52, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
 section.offer .offer-content .amt-card-left .amt-card-bg .amt-card .amt-card-content .fee-container {
   display: flex;
   justify-content: space-between;
@@ -247,7 +272,7 @@ section.offer .offer-content .amt-card-left .amt-card-bg .amt-card .amt-card-con
   font-weight: 500;
 }
 
-/* line 44, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+/* line 58, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
 section.offer .offer-content .amt-card-left .amt-card-bg span#ill {
   position: absolute;
   bottom: 2%;
@@ -257,17 +282,111 @@ section.offer .offer-content .amt-card-left .amt-card-bg span#ill {
   font-weight: 500;
 }
 
-/* line 52, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+/* line 66, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
 section.offer .offer-content .text-right h3 {
   font-size: 2.5rem;
   margin-top: 0;
+  color: #372865;
 }
 
-/* line 55, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+/* line 70, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
 section.offer .offer-content .text-right p {
   font-size: 1.3rem;
   font-weight: 600;
   color: #5F626F;
+}
+
+/* line 1, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+section.loans {
+  margin: 100px 0;
+}
+
+/* line 3, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+section.loans .loans-content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+/* line 11, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+section.loans .loans-content .text-left h3 {
+  font-size: 2.5rem;
+  color: #372865;
+}
+
+/* line 14, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+section.loans .loans-content .text-left .payment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* line 18, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+section.loans .loans-content .text-left .payment img {
+  height: 40px;
+}
+
+/* line 20, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+section.loans .loans-content .text-left .payment img:last-of-type {
+  height: 50px;
+}
+
+/* line 22, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+section.loans .loans-content .text-left .payment img:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+/* line 24, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+section.loans .loans-content .text-left .play-video {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* line 28, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+section.loans .loans-content .text-left .play-video .play-cont {
+  background-color: #909ABB;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 15px;
+}
+
+/* line 35, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+section.loans .loans-content .text-left .play-video .play-cont span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+/* line 41, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+section.loans .loans-content .text-left .play-video span {
+  color: #909ABB;
+  font-weight: 500;
+}
+
+/* line 1, D:/Projects/htmlCSS/credit-locus/sass/layouts/_cash-flow-section.sass */
+section.cash-flow {
+  margin: 100px 0;
+  background-color: #372865;
+}
+
+/* line 4, D:/Projects/htmlCSS/credit-locus/sass/layouts/_cash-flow-section.sass */
+section.cash-flow .cash-flow-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 7, D:/Projects/htmlCSS/credit-locus/sass/layouts/_cash-flow-section.sass */
+section.cash-flow .cash-flow-content .text-and-photo {
+  display: flex;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=app.css.map */
