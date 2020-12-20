@@ -1,0 +1,58 @@
+section.offer
+  .offer-content
+    width: 80%
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: space-around
+    .amt-card-left
+      .amt-card-bg
+        height: 500px
+        width: 400px
+        background-color: $card-bg
+        position: relative
+        .amt-card
+          background-color: $bg-color
+          border-radius: 15px
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          width: 80%
+          height: 80%
+          display: flex
+          align-items: center
+          justify-content: center
+          .amt-card-content
+            text-align: center
+            h4
+              font-size: 1.3rem
+              color: $sub-text
+            h3
+              font-size: 2.8rem
+              color: $accent
+            input
+              width: 100%
+              margin: 0;
+              margin-bottom: 40px;
+            .fee-container
+              display: flex
+              justify-content: space-between
+              margin: 10px 0
+              color: $sub-text
+              font-weight: 500
+        span#ill
+          position: absolute
+          bottom: 2%
+          left: 50%
+          transform: translate(-50%, 0)
+          color: $sub-text
+          font-weight: 500
+    .text-right
+      h3
+        font-size: 2.5rem
+        margin-top: 0
+      p
+        font-size: 1.3rem
+        font-weight: 600
+        color: $sub-text
