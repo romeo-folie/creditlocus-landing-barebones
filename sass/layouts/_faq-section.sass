@@ -1,0 +1,43 @@
+section.faq
+  .faq-content
+    width: 80%
+    margin: 0 auto
+    padding: 60px 0
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    h3
+      font-size: 2.5rem
+      color: $sub-text
+    .accordion-container
+      width: 70%
+      .tab
+        .accordion
+          width: 100%
+          text-align: left
+          color: $sub-text
+          transition: 0.4s
+          padding: 20px
+          border-top: 1px solid $sub-text
+          border-bottom: 1px solid $sub-text
+          &:after
+            content: '\02795'
+            font-size: 13px
+            color: #777
+            float: right
+            margin-left: 5px
+        .active
+          border-bottom: none
+          &:after
+            content: "\2796"
+        .panel
+          color: $sub-text
+          padding: 20px 20px
+          display: none
+          overflow: hidden
+          max-height: 0
+          transition: max-height 0.2s ease-out
+          p
+            margin: 0
+
