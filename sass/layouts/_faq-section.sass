@@ -2,22 +2,22 @@ section.faq
   .faq-content
     width: 80%
     margin: 0 auto
-    padding: 60px 0
     text-align: center
     display: flex
     flex-direction: column
     align-items: center
     h3
-      font-size: 2.5rem
+      font-size: 3.0rem
       color: $sub-text
     .accordion-container
-      width: 70%
+      width: 60%
       .accordion
         width: 100%
         text-align: left
         color: $sub-text
         transition: 0.4s
         padding: 20px
+        padding-left: 0
         border: none
         outline: none
         background-color: $bg-color
@@ -28,17 +28,15 @@ section.faq
         &:focus,hover
           outline: none 
         &:after
-          content: '\039B'
+          content: '\02C5'
           font-size: 15px
           color: #777
           float: right  
           margin-left: 5px
-          transform: scaleY(-1)
       .active
         border-bottom: none
         &:after
-          content: "\039B"
-          transform: scaleY(1)
+          content: "\02C4"
       .panel
         color: $sub-text
         justify-content: center
@@ -49,11 +47,13 @@ section.faq
         p
           margin: 0
           margin-bottom: 20px
-          font-size: 1.0rem
+          font-size: 1.1rem
           color: $sub-text-light
+          text-align: left
     p
       margin-top: 40px
       margin-bottom: 0
+      font-size: 1.1rem
       span
         font-weight: 500
         color: #5F8FBE

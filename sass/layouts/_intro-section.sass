@@ -1,23 +1,23 @@
 section.intro
-  height: 100vh
   .intro-content
     width: 80%
     margin: 0 auto
     display: flex
     align-items: center
-    justify-content: space-around
-    padding-top: 60px
+    justify-content: space-between
     .text-left
       h2
-        font-size: 3.5rem
+        font-size: 4.5rem
         color: $primary
-        margin-bottom: 15px
+        margin-bottom: 0
       h4
         color: $primary
-        font-weight: 500
-        margin-bottom: 30px
+        font-size: 1.4rem
+        font-weight: 400
+        margin-top: 15px
+        margin-bottom: 50px
       .email-input
-        height: 50px
+        height: 60px
         position: relative
         display: flex
         justify-content: space-between
@@ -30,19 +30,23 @@ section.intro
           padding: 0
           padding-left: 15px
           font-size: 1rem
+          color: $sub-text-light
           &:focus
             outline: none
+          &::placeholder
+            color: $sub-text-light
         a.join-btn
           position: absolute
           top: 0
           right: 0
-          width: 12%
+          width: 25%
           background-color: $primary
           color: #fff
           padding: 10px 25px
           border-radius: 25px
           text-align: center
-          height: 30px
+          height: 40px
+          font-size: 1.0rem
     .image-right
       img
-        height: 600px
+        height: 720px
