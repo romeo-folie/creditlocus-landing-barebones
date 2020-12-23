@@ -1,0 +1,41 @@
+section.resources
+  .resources-content
+    width: 80%
+    margin: 0 auto
+    padding: 60px 0
+    text-align: center
+    h3
+      font-size: 2.5rem
+      color: $sub-text
+    .carousel
+      display: flex
+      .resource-item
+        margin: 0 10px
+        position: relative
+        .overlay
+          position: absolute
+          top: 0
+          left: 0
+          bottom: 0
+          right: 0
+          background-color: rgba(255,0,0,0)
+          border-radius: 20px
+          &:hover
+            background-color: rgba(0,0,0,0.5)
+        img
+          height: 220px
+          border-radius: 20px
+        &:focus
+          outline: none
+        .item-info
+          position: absolute
+          left: 50%
+          top: 50%
+          transform: translate(-50%, -50%)
+          h4
+            color: $bg-color
+          a
+            color: $bg-color
+    p
+      margin-bottom: 0
+      margin-top: 100px  

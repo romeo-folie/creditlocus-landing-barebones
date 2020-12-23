@@ -12,32 +12,51 @@ section.faq
       color: $sub-text
     .accordion-container
       width: 70%
-      .tab
-        .accordion
-          width: 100%
-          text-align: left
-          color: $sub-text
-          transition: 0.4s
-          padding: 20px
-          border-top: 1px solid $sub-text
-          border-bottom: 1px solid $sub-text
-          &:after
-            content: '\02795'
-            font-size: 13px
-            color: #777
-            float: right
-            margin-left: 5px
-        .active
-          border-bottom: none
-          &:after
-            content: "\2796"
-        .panel
-          color: $sub-text
-          padding: 20px 20px
-          display: none
-          overflow: hidden
-          max-height: 0
-          transition: max-height 0.2s ease-out
-          p
-            margin: 0
+      .accordion
+        width: 100%
+        text-align: left
+        color: $sub-text
+        transition: 0.4s
+        padding: 20px
+        border: none
+        outline: none
+        background-color: $bg-color
+        border-bottom: 0.5px solid $sub-text-light
+        font-size: 1.1rem
+        &:first-of-type
+          border-top: 0.5px solid $sub-text-light
+        &:focus,hover
+          outline: none 
+        &:after
+          content: '\039B'
+          font-size: 15px
+          color: #777
+          float: right  
+          margin-left: 5px
+          transform: scaleY(-1)
+      .active
+        border-bottom: none
+        &:after
+          content: "\039B"
+          transform: scaleY(1)
+      .panel
+        color: $sub-text
+        justify-content: center
+        align-items: center
+        max-height: 0
+        overflow: hidden
+        transition: max-height 0.2s ease-out
+        p
+          margin: 0
+          margin-bottom: 20px
+          font-size: 1.0rem
+          color: $sub-text-light
+    p
+      margin-top: 40px
+      margin-bottom: 0
+      span
+        font-weight: 500
+        color: #5F8FBE
+        
+
 
