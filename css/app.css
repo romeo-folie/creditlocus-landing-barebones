@@ -582,7 +582,7 @@ section.resources .resources-content {
 
 /* line 6, D:/Projects/htmlCSS/credit-locus/sass/layouts/_resources-section.sass */
 section.resources .resources-content h3 {
-  font-size: 2.5rem;
+  font-size: 3.0rem;
   color: #5F626F;
 }
 
@@ -648,6 +648,150 @@ section.resources .resources-content p {
   margin-bottom: 0;
   margin-top: 100px;
   font-size: 1.1rem;
+}
+
+/* line 1, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog {
+  height: auto;
+}
+
+/* line 3, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* line 11, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content h3 {
+  font-size: 3.0rem;
+  color: #372865;
+}
+
+/* line 14, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* line 20, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .input-container {
+  width: 38%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* line 26, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .input-container select#filter {
+  width: 60%;
+  height: 100%;
+  border: none;
+  background-color: #FAF9FF;
+  padding-left: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* line 35, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .input-container select#filter:focus {
+  outline: none;
+}
+
+/* line 37, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .input-container a.search-btn {
+  width: 25%;
+  height: 100%;
+  background-color: #372865;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* line 43, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .input-container input#search {
+  width: 60%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background-color: #FAF9FF;
+  padding-left: 15px;
+}
+
+/* line 50, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .input-container input#search:focus {
+  outline: none;
+}
+
+/* line 52, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .post {
+  display: flex;
+  align-items: center;
+  border-radius: 15px 0 0 15px;
+  width: 70%;
+  height: 220px;
+  margin-bottom: 30px;
+}
+
+/* line 59, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .post img {
+  height: 100%;
+  border-radius: inherit;
+}
+
+/* line 62, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .post .text-container {
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 80%;
+  -webkit-box-shadow: 0px 0px 11px -1px rgba(31, 17, 123, 0.1);
+  -moz-box-shadow: 0px 0px 11px -1px rgba(31, 17, 123, 0.1);
+  box-shadow: 0px 0px 11px -1px rgba(31, 17, 123, 0.1);
+  border-radius: 0 15px 15px 0;
+}
+
+/* line 72, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .post .text-container .line-one {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* line 76, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .post .text-container .line-one span {
+  color: #909ABB;
+  font-size: 0.9rem;
+}
+
+/* line 80, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .post .text-container .article-content h4 {
+  font-size: 1.0rem;
+  margin: 0;
+  color: #5F626F;
+}
+
+/* line 84, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .post .text-container .article-content p {
+  font-size: 0.9rem;
+  margin-bottom: auto;
+}
+
+/* line 87, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .post .text-container a#more {
+  margin-left: auto;
+  font-size: 0.9rem;
 }
 
 /* line 1, D:/Projects/htmlCSS/credit-locus/sass/layouts/_footer.sass */

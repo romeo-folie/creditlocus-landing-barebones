@@ -1,0 +1,92 @@
+section.blog
+  height: auto
+  .blog-content
+    display: flex
+    flex-direction: column
+    align-items: center;
+    width: 80%
+    margin: 0 auto
+    text-align: center
+    padding-top: 50px
+    h3
+      font-size: 3.0rem
+      color: $primary
+    .filter-bar
+      width: 100%
+      display: flex
+      margin: 0 auto
+      justify-content: center
+      margin-bottom: 30px
+      .input-container
+        width: 38%
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        select#filter
+          width: 60%
+          height: 100%
+          border: none
+          background-color: $input-bg
+          padding-left: 15px
+          -webkit-appearance: none
+          -moz-appearance: none
+          appearance: none
+          &:focus
+            outline: none
+        a.search-btn
+          width: 25%
+          height: 100%
+          background-color: $primary
+          color: #fff
+          font-size: 1rem
+        input#search
+          width: 60%
+          height: 100%
+          padding: 0
+          border: none
+          background-color: $input-bg
+          padding-left: 15px
+          &:focus
+            outline: none
+    .post
+      display: flex
+      align-items: center
+      border-radius: 15px 0 0 15px
+      width: 70%
+      height: 220px
+      margin-bottom: 30px
+      img
+        height: 100%
+        border-radius: inherit;
+      .text-container
+        width: 50%
+        text-align: left
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 20px
+        height: 80%
+        +card-shadow
+        border-radius: 0 15px 15px 0
+        .line-one
+          display: flex
+          justify-content: space-between
+          margin-bottom: 15px
+          span
+            color: $sub-text-light
+            font-size: 0.9rem
+        .article-content
+          h4
+            font-size: 1.0rem
+            margin: 0
+            color: $sub-text
+          p
+            font-size: 0.9rem
+            margin-bottom: auto
+        a#more
+          margin-left: auto
+          font-size: 0.9rem
+              
+        
+
