@@ -1,0 +1,40 @@
+.post
+      display: flex
+      align-items: center
+      border-radius: 15px 0 0 15px
+      width: 70%
+      height: 220px
+      margin-bottom: 30px
+      justify-content: center
+      img
+        height: 100%
+        border-radius: inherit;
+      .text-container
+        width: 50%
+        text-align: left
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 20px
+        height: 80%
+        +card-shadow
+        border-radius: 0 15px 15px 0
+        .line-one
+          display: flex
+          justify-content: space-between
+          margin-bottom: 15px
+          span
+            color: $sub-text-light
+            font-size: 0.9rem
+        .article-content
+          h4
+            font-size: 1.0rem
+            margin: 0
+            color: $sub-text
+          p
+            font-size: 0.9rem
+            margin-bottom: auto
+        a#more
+          margin-left: auto
+          font-size: 0.9rem
+      &:not(:first-of-type)

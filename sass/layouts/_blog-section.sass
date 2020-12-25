@@ -23,6 +23,7 @@ section.blog
         display: flex
         align-items: center
         justify-content: flex-start
+        border-radius: 15px 0 0 15px
         select#filter
           width: 60%
           height: 100%
@@ -32,6 +33,7 @@ section.blog
           -webkit-appearance: none
           -moz-appearance: none
           appearance: none
+          border-radius: inherit
           &:focus
             outline: none
         a.search-btn
@@ -40,6 +42,7 @@ section.blog
           background-color: $primary
           color: #fff
           font-size: 1rem
+          border-radius: 0 15px 15px 0
         input#search
           width: 60%
           height: 100%
@@ -47,46 +50,63 @@ section.blog
           border: none
           background-color: $input-bg
           padding-left: 15px
+          border-radius: inherit
           &:focus
             outline: none
-    .post
-      display: flex
-      align-items: center
-      border-radius: 15px 0 0 15px
-      width: 70%
-      height: 220px
-      margin-bottom: 30px
-      img
-        height: 100%
-        border-radius: inherit;
-      .text-container
-        width: 50%
-        text-align: left
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        padding: 20px
-        height: 80%
+    .post-wrapper
+      width: 100%
+      display: grid
+      grid-template-columns: repeat(auto-fill, minmax(330px, 29%))
+      grid-gap: 30px 0
+      margin: 30px 0
+      justify-content: center
+      .post
+        height: 500px
+        width: 330px
         +card-shadow
-        border-radius: 0 15px 15px 0
-        .line-one
+        background-color: #fff
+        border-radius: 0 0 15px 15px
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        .image-container
+          height: 40%
+          border-radius: 15px 15px 0 0
+          img
+            height: 100%
+            width: 100%
+            border-radius: inherit
+        .text-container
           display: flex
-          justify-content: space-between
-          margin-bottom: 15px
-          span
-            color: $sub-text-light
-            font-size: 0.9rem
-        .article-content
-          h4
-            font-size: 1.0rem
-            margin: 0
-            color: $sub-text
-          p
-            font-size: 0.9rem
-            margin-bottom: auto
-        a#more
-          margin-left: auto
-          font-size: 0.9rem
-              
-        
-
+          flex-direction: column
+          height: 55%
+          text-align: left
+          padding: 15px
+          justify-content: space-around
+          border-radius: inherit
+          .line-one
+            display: flex
+            justify-content: space-between
+            span
+              font-size: .9rem
+              color: $sub-text-light
+            span#cat::before
+              content: "\2022"
+              color: $sub-text
+              margin-right: 5px 
+              font-weight: 800
+          .article-content
+            h4
+              font-size: 1.0rem
+              margin: 10px 0
+              color: $sub-text
+            p
+              font-size: .9rem
+              margin: 10px 0
+              color: $sub-text
+          a#more
+            font-size: .9rem
+            margin-left: auto
+            &::after
+              content: "\27f6"
+              color: $primary
+              margin-left: 5px
