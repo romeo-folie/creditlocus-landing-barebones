@@ -804,29 +804,91 @@ section.blog .blog-content .post-wrapper .post .text-container .line-one span#ca
 
 /* line 98, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .text-container .article-content h4 {
-  font-size: 1.0rem;
+  font-size: 1.2rem;
   margin: 10px 0;
   color: #5F626F;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-/* line 102, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 106, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .text-container .article-content p {
   font-size: .9rem;
   margin: 10px 0;
   color: #5F626F;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-/* line 106, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 114, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .text-container a#more {
   font-size: .9rem;
   margin-left: auto;
 }
 
-/* line 109, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 117, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .text-container a#more::after {
   content: "\27f6";
   color: #372865;
   margin-left: 5px;
+}
+
+/* line 1, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
+section.post {
+  height: auto;
+}
+
+/* line 3, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
+section.post .post-content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 85px 0 50px 0;
+}
+
+/* line 8, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
+section.post .post-content a#back {
+  font-size: 1.0rem;
+  float: left;
+}
+
+/* line 11, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
+section.post .post-content a#back::before {
+  content: "\27f5";
+  margin-right: 5px;
+}
+
+/* line 14, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
+section.post .post-content h3 {
+  font-size: 2.3rem;
+}
+
+/* line 16, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
+section.post .post-content div#category {
+  padding: 8px 12px;
+  border-radius: 25px;
+  border: 1px solid #5F626F;
+  width: 80px;
+  margin: 0 auto 20px;
+}
+
+/* line 22, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
+section.post .post-content img {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* line 27, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
+section.post .post-content .article-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 /* line 1, D:/Projects/htmlCSS/credit-locus/sass/layouts/_footer.sass */
