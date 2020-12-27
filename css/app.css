@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 /* line 1, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
-.post-wrapper, section.related-posts .related-post-content .related-content .post-wrapper {
+.post-wrapper, section.related-posts .related-post-content .post-wrapper {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 29%));
@@ -10,7 +10,7 @@
 }
 
 /* line 8, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
-.post-wrapper .post, section.related-posts .related-post-content .related-content .post-wrapper .post {
+.post-wrapper .post, section.related-posts .related-post-content .post-wrapper .post {
   height: 485px;
   width: 330px;
   -webkit-box-shadow: 0px 10px 11px -1px rgba(31, 17, 123, 0.1);
@@ -23,20 +23,20 @@
 }
 
 /* line 16, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
-.post-wrapper .post .image-container, section.related-posts .related-post-content .related-content .post-wrapper .post .image-container {
+.post-wrapper .post .image-container, section.related-posts .related-post-content .post-wrapper .post .image-container {
   height: 40%;
   border-radius: 15px 15px 0 0;
 }
 
 /* line 19, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
-.post-wrapper .post .image-container img, section.related-posts .related-post-content .related-content .post-wrapper .post .image-container img {
+.post-wrapper .post .image-container img {
   height: 100%;
   width: 100%;
   border-radius: inherit;
 }
 
 /* line 23, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
-.post-wrapper .post .text-container, section.related-posts .related-post-content .related-content .post-wrapper .post .text-container {
+.post-wrapper .post .text-container, section.related-posts .related-post-content .post-wrapper .post .text-container {
   display: flex;
   flex-direction: column;
   height: 55%;
@@ -48,7 +48,7 @@
 }
 
 /* line 32, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
-.post-wrapper .post .text-container .line-one, section.related-posts .related-post-content .related-content .post-wrapper .post .text-container .line-one {
+.post-wrapper .post .text-container .line-one {
   display: flex;
   justify-content: space-between;
 }
@@ -68,7 +68,7 @@
 }
 
 /* line 43, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
-.post-wrapper .post .text-container .article-content, section.related-posts .related-post-content .related-content .post-wrapper .post .text-container .article-content {
+.post-wrapper .post .text-container .article-content {
   height: 65%;
 }
 
@@ -854,7 +854,7 @@ section.blog .blog-content .filter-bar .input-container input#search:focus {
 }
 
 /* line 56, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
-section.blog .blog-content .post-wrapper, section.blog .blog-content section.related-posts .related-post-content .related-content .post-wrapper, section.related-posts .related-post-content .related-content section.blog .blog-content .post-wrapper {
+section.blog .blog-content .post-wrapper {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 29%));
@@ -976,7 +976,7 @@ section.post .post-content {
 
 /* line 8, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
 section.post .post-content a#back {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   float: left;
   margin-left: 10%;
 }
@@ -1038,13 +1038,32 @@ section.post .post-content .article-wrapper div#ad {
 
 /* line 1, D:/Projects/htmlCSS/credit-locus/sass/layouts/_related-posts-section.sass */
 section.related-posts {
-  background-color: #5F626F;
+  background-color: #f9f9f9;
+  height: auto;
 }
 
-/* line 3, D:/Projects/htmlCSS/credit-locus/sass/layouts/_related-posts-section.sass */
+/* line 4, D:/Projects/htmlCSS/credit-locus/sass/layouts/_related-posts-section.sass */
 section.related-posts .related-post-content {
   width: 80%;
   margin: 0 auto;
+  padding: 30px 0 50px;
+}
+
+/* line 8, D:/Projects/htmlCSS/credit-locus/sass/layouts/_related-posts-section.sass */
+section.related-posts .related-post-content .post-wrapper {
+  margin-top: 40px;
+}
+
+/* line 11, D:/Projects/htmlCSS/credit-locus/sass/layouts/_related-posts-section.sass */
+section.related-posts .related-post-content h3 {
+  margin-left: 5%;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* line 15, D:/Projects/htmlCSS/credit-locus/sass/layouts/_related-posts-section.sass */
+section.related-posts .related-post-content hr {
+  width: 90%;
 }
 
 /* line 1, D:/Projects/htmlCSS/credit-locus/sass/layouts/_footer.sass */
