@@ -802,16 +802,16 @@ section.blog .blog-content .filter-bar {
 /* line 20, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .filter-bar .input-container {
   width: 38%;
-  height: 50px;
+  height: 56px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   border-radius: 15px 0 0 15px;
 }
 
 /* line 27, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .filter-bar .input-container select#filter {
-  width: 60%;
+  width: 70%;
   height: 100%;
   border: none;
   background-color: #FAF9FF;
@@ -839,7 +839,7 @@ section.blog .blog-content .filter-bar .input-container a.search-btn {
 
 /* line 46, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .filter-bar .input-container input#search {
-  width: 60%;
+  width: 70%;
   height: 100%;
   padding: 0;
   border: none;
@@ -859,7 +859,7 @@ section.blog .blog-content .post-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 29%));
   grid-gap: 30px 0;
-  margin: 30px 0;
+  margin: 30px 0 50px;
   justify-content: center;
 }
 
@@ -1058,12 +1058,179 @@ section.related-posts .related-post-content .post-wrapper {
 section.related-posts .related-post-content h3 {
   margin-left: 5%;
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 /* line 15, D:/Projects/htmlCSS/credit-locus/sass/layouts/_related-posts-section.sass */
 section.related-posts .related-post-content hr {
   width: 90%;
+}
+
+/* line 2, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+.content-wrapper hr {
+  width: 80%;
+}
+
+/* line 6, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.statements {
+  height: 100vh;
+}
+
+/* line 8, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.statements .statement-content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 12, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.statements .statement-content h3 {
+  font-size: 2.3rem;
+}
+
+/* line 14, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.statements .statement-content p {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  text-align: left;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* line 21, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.leadership {
+  height: auto;
+}
+
+/* line 23, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.leadership .leadership-content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+/* line 31, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.leadership .leadership-content h3 {
+  font-size: 2.3rem;
+  margin-bottom: 0;
+}
+
+/* line 34, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.leadership .leadership-content .leaders {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 29%));
+  justify-content: center;
+  margin: 50px 0;
+}
+
+/* line 39, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.leadership .leadership-content .leaders .leader-col {
+  text-align: center;
+}
+
+/* line 41, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.leadership .leadership-content .leaders .leader-col img {
+  max-width: 300px;
+}
+
+/* line 43, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.leadership .leadership-content .leaders .leader-col h4 {
+  font-size: 1.3rem;
+  margin: 10px 0 8px;
+}
+
+/* line 46, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.leadership .leadership-content .leaders .leader-col span {
+  font-size: 1.1rem;
+}
+
+/* line 50, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.directors {
+  height: auto;
+}
+
+/* line 52, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.directors .director-content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+/* line 60, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.directors .director-content h3 {
+  font-size: 2.3rem;
+  margin-bottom: 0;
+}
+
+/* line 63, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.directors .director-content .leaders {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 29%));
+  justify-content: center;
+  margin: 50px 0;
+}
+
+/* line 68, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.directors .director-content .leaders .leader-col {
+  text-align: center;
+}
+
+/* line 70, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.directors .director-content .leaders .leader-col img {
+  max-width: 300px;
+}
+
+/* line 72, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.directors .director-content .leaders .leader-col h4 {
+  font-size: 1.3rem;
+  margin: 10px 0 8px;
+}
+
+/* line 75, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.directors .director-content .leaders .leader-col span {
+  font-size: 1.1rem;
+}
+
+/* line 79, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.company-info {
+  height: auto;
+}
+
+/* line 81, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.company-info .company-info-content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0 50px;
+}
+
+/* line 89, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.company-info .company-info-content h3 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+/* line 92, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.company-info .company-info-content p#address {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* line 95, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+section.company-info .company-info-content h5 {
+  font-size: 1.6rem;
+  margin: 0;
 }
 
 /* line 1, D:/Projects/htmlCSS/credit-locus/sass/layouts/_footer.sass */
