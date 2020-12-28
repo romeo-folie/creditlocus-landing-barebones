@@ -132,7 +132,7 @@ a {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   font-weight: 700;
 }
 
@@ -161,14 +161,14 @@ header.top-nav {
   display: flex;
   position: fixed;
   top: 0;
-  height: 75px;
+  height: 85px;
   width: 100%;
   justify-content: center;
   align-items: center;
   z-index: 15;
-  -webkit-box-shadow: 10px 13px 15px -20px black;
-  -moz-box-shadow: 10px 13px 15px -20px black;
-  box-shadow: 10px 13px 15px -20px black;
+  -webkit-box-shadow: 10px 25px 20px -20px rgba(31, 17, 123, 0.1);
+  -moz-box-shadow: 10px 25px 20px -20px rgba(31, 17, 123, 0.1);
+  box-shadow: 10px 25px 20px -20px rgba(31, 17, 123, 0.1);
 }
 
 /* line 1, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
@@ -194,40 +194,45 @@ header.top-nav {
   align-items: center;
 }
 
-/* line 15, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
+/* line 16, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
+.navbar .left-items .brand a img {
+  width: 130px;
+}
+
+/* line 18, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
 .navbar .left-items ul {
   display: flex;
   justify-content: space-between;
   width: 52%;
 }
 
-/* line 20, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
+/* line 23, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
 .navbar .left-items ul li a.nav-link {
   color: #373840;
 }
 
-/* line 22, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
+/* line 25, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
 .navbar .right-items {
-  width: 12%;
+  width: 13%;
 }
 
-/* line 24, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
+/* line 27, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
 .navbar .right-items ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* line 29, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
+/* line 32, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
 .navbar .right-items ul li a.nav-link {
   color: #373840;
 }
 
-/* line 31, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
+/* line 34, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
 .navbar .right-items ul li #sign-up-btn {
   background-color: #372865;
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 28px;
   border-radius: 5px;
 }
 
@@ -245,27 +250,28 @@ section.intro .intro-content {
 section.intro .intro-content .text-left h2 {
   font-size: 4.5rem;
   color: #372865;
+  margin-top: 25px;
   margin-bottom: 0;
 }
 
-/* line 14, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 15, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left h4 {
   color: #372865;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin-top: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-/* line 20, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 21, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left .email-input {
-  height: 60px;
+  height: 55px;
   position: relative;
   display: flex;
   justify-content: space-between;
 }
 
-/* line 25, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 26, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left .email-input input {
   border: none;
   border-radius: 25px;
@@ -278,37 +284,37 @@ section.intro .intro-content .text-left .email-input input {
   color: #909ABB;
 }
 
-/* line 35, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 36, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left .email-input input:focus {
   outline: none;
 }
 
-/* line 37, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 38, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left .email-input input::placeholder {
   color: #909ABB;
 }
 
-/* line 39, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 40, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left .email-input a.join-btn {
   position: absolute;
   top: 0;
   right: 0;
-  width: 25%;
+  width: 28%;
   background-color: #372865;
   color: #fff;
-  padding: 10px 25px;
+  padding: 7px 15px;
   border-radius: 25px;
   text-align: center;
   height: 40px;
   font-size: 1.0rem;
 }
 
-/* line 51, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 52, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .image-right {
   max-width: 50%;
 }
 
-/* line 53, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 54, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .image-right img {
   height: 720px;
 }
@@ -567,7 +573,7 @@ section.approval .approval-content .approval-grid {
   grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
   grid-gap: 50px 50px;
   margin-top: 30px;
-  width: 70%;
+  width: 80%;
 }
 
 /* line 19, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
@@ -814,7 +820,7 @@ section.blog .blog-content .filter-bar {
 /* line 20, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .filter-bar .input-container {
   width: 38%;
-  height: 56px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -988,7 +994,7 @@ section.post .post-content {
 
 /* line 8, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
 section.post .post-content a#back {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   float: left;
   margin-left: 10%;
 }
@@ -1097,7 +1103,7 @@ section.statements .statement-content {
 
 /* line 12, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.statements .statement-content h3 {
-  font-size: 2.3rem;
+  font-size: 3.0rem;
 }
 
 /* line 14, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
@@ -1282,7 +1288,7 @@ footer.bottom-nav .bottom-nav-content .link-grid .column h4 {
 
 /* line 21, D:/Projects/htmlCSS/credit-locus/sass/layouts/_footer.sass */
 footer.bottom-nav .bottom-nav-content .link-grid .column a {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   color: #ffffff;
 }
 
