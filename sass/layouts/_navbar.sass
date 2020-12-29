@@ -18,13 +18,13 @@
     ul
       display: flex
       justify-content: space-between
-      width: 52%
+      width: 53%
       li
         a.nav-link
           color: $secondary
   .right-items
-    width: 13%
-    ul
+    width: 14%
+    ul.navlist
       display: flex
       justify-content: space-between
       align-items: center
@@ -36,5 +36,72 @@
           color: #fff
           padding: 12px 28px
           border-radius: 5px
-          
-      
+
+
+div.dropdown-menu
+	display: none
+	a
+		text-decoration: none
+		color: #000000
+		font-size: 1.9rem
+		&:click
+			outline: none
+		img
+			margin-top: 10px
+
+
+@media screen and (max-width: 600px)
+	.navbar
+    .left-items
+      ul.navlist
+        display: none
+    .right-items
+      ul.navlist
+        display: none
+    div.dropdown-menu
+      display: block
+
+@media screen and (min-width: 600px) 
+  .navbar
+    div.left-items
+      width: 51%
+    div.right-items
+      width: 25%
+
+@media screen and (min-width: 850px)
+  .navbar
+    div.left-items
+      width: 35%
+    div.right-items
+      width: 16%
+
+@media screen and (min-width: 950px)
+  div.left-items
+    ul.navlist
+      width: 54%
+
+@media screen and (min-width: 1080px)
+  .navbar
+    div.left-items
+      width: 32%
+    div.right-items
+      width: 15%
+
+@media screen and (min-width: 1280px)
+  .navbar
+    div.left-items
+      width: 30%
+    div.right-items
+      width: 14%
+
+@media screen and (min-width: 1300px)
+  .navbar
+    div.left-items
+      width: 28%
+      ul.navlist
+        width: 53%
+    div.right-items
+      width: 13%
+
+    
+  
