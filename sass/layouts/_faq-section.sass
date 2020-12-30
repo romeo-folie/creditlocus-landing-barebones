@@ -11,7 +11,7 @@ section.faq
       font-size: 3.0rem
       color: $sub-text
     .accordion-container
-      width: 70%
+      width: 80%
       .accordion
         width: 100%
         text-align: left
@@ -61,3 +61,18 @@ section.faq
         
 
 
+@media screen and (max-width: 1060px)
+  section.faq
+    .faq-content
+      .accordion-container
+        width: 100%
+
+@media screen and (max-widh: 600px)
+  section.faq
+    .faq-content
+      .accordion-container
+        .accordion
+          font-size: 1.0rem
+        .panel
+          p
+            font-size: 1.0rem

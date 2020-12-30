@@ -16,9 +16,11 @@ section.approval
       grid-gap: 50px 50px
       margin-top: 30px
       width: 80%
+      justify-content: center
       .approval-item
         display: flex
-        align-content: flex-start
+        align-items: flex-start
+        justify-content: center
         img
           height: 90px
           margin-right: 20px
@@ -35,3 +37,27 @@ section.approval
             color: $sub-text-light
             margin-top: 10px
             font-weight: 600
+
+
+@media screen and (max-width: 1060px)
+  section.approval
+    .approval-content
+      h3
+        font-size: 2.5rem
+
+@media screen and (max-width: 600px)
+  section.approval
+    .approval-content
+      h3
+        font-size: 2.3rem
+      .approval-grid
+        width: 100%
+        .approval-item
+          img
+            height: 75px
+          .text-container
+            h4
+              font-size: 1.3rem
+            p
+              font-size: 1.2rem
+        
