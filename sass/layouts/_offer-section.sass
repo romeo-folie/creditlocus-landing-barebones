@@ -7,9 +7,10 @@ section.offer
     justify-content: space-between
     max-width: 1240px
     .amt-card-left
+      margin-right: 30px
       .amt-card-bg
-        height: 600px
-        width: 470px
+        height: 580px
+        width: 40vw
         background-color: $card-bg
         border-radius: 15px
         position: relative
@@ -26,6 +27,7 @@ section.offer
           align-items: center
           justify-content: center
           .amt-card-content
+            padding: 20px
             text-align: center
             h4
               font-size: 1.3rem
@@ -65,10 +67,57 @@ section.offer
           font-weight: 500
     .text-right
       h3
-        font-size: 3.0rem
+        font-size: 2.6rem
         margin-top: 0
         color: $primary
       p
         font-size: 1.5rem
         font-weight: 600
         color: $sub-text
+
+
+@media screen and (max-width: 1000px)
+  section.offer
+    .offer-content
+      flex-direction: column
+      padding-top: 50px
+      .amt-card-left
+        margin-bottom: 50px
+        margin-right: auto
+        width: 100%
+        .amt-card-bg
+          margin: 0 auto
+          width: 100%
+          height: 750px
+      .text-right
+        margin: 50px 0
+        text-align: center
+
+@media screen and (max-width: 600px)
+  section.offer
+    .offer-content
+      .amt-card-left
+        margin-right: auto
+        .amt-card-bg
+          width: 100%
+          height: 450px
+          .amt-card
+            .amt-card-content
+              h3
+                font-size: 2.2rem
+      .text-right
+        h3
+          font-size: 2.2rem
+        p
+          font-size: 1.4rem
+
+@media screen and (min-width: 1300px)
+  section.offer
+    .offer-content
+      .amt-card-left
+        .amt-card-bg
+          height: 600px
+          width: 470px
+      .text-right
+        h3
+          font-size: 3.0rem

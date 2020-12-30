@@ -8,7 +8,7 @@ section.loans
     max-width: 1240px
     .text-left
       h3
-        font-size: 3.0rem
+        font-size: 2.6rem
         color: $primary
       .payment
         display: flex
@@ -44,3 +44,43 @@ section.loans
     .image-right
       img
         height: 550px
+
+@media screen and (max-width: 1000px)
+  section.loans
+    .loans-content
+      flex-direction: column-reverse
+      .image-right
+        width: 100%
+        img
+          width: 100%
+          height: auto
+          margin: 0 auto
+          display: flex
+      .text-left
+        margin-bottom: 30px
+        text-align: center
+        .payment, .play-video
+          justify-content: center
+
+
+@media screen and (max-width: 600px)
+  section.loans
+    .loans-content
+      .image-right
+        img
+          width: 100%
+      .text-left
+        h3
+          font-size: 2.2rem
+        .play-video
+          .play-cont
+            span
+              font-size: 1.4rem
+
+
+@media screen and (min-width: 1300px)
+  section.loans
+    .loans-content
+      .text-left
+        h3
+          font-size: 3.0rem

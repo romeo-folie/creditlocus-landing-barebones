@@ -6,29 +6,28 @@
   padding: 0 20px
   .left-items
     display: flex
-    justify-content: space-between
-    width: 28%
     align-items: center
     .brand
       display: flex
       align-items: center
+      margin-right: 30px
       a
         img
           width: 130px
     ul
       display: flex
-      justify-content: space-between
-      width: 53%
       li
+        &:not(:last-of-type)
+          margin-right: 25px
         a.nav-link
           color: $secondary
   .right-items
-    width: 14%
     ul.navlist
       display: flex
-      justify-content: space-between
       align-items: center
       li
+        &:not(:last-of-type)
+          margin-right: 25px
         a.nav-link
           color: $secondary
         #sign-up-btn
@@ -60,48 +59,6 @@ div.dropdown-menu
         display: none
     div.dropdown-menu
       display: block
-
-@media screen and (min-width: 600px) 
-  .navbar
-    div.left-items
-      width: 51%
-    div.right-items
-      width: 25%
-
-@media screen and (min-width: 850px)
-  .navbar
-    div.left-items
-      width: 35%
-    div.right-items
-      width: 16%
-
-@media screen and (min-width: 950px)
-  div.left-items
-    ul.navlist
-      width: 54%
-
-@media screen and (min-width: 1080px)
-  .navbar
-    div.left-items
-      width: 32%
-    div.right-items
-      width: 15%
-
-@media screen and (min-width: 1280px)
-  .navbar
-    div.left-items
-      width: 30%
-    div.right-items
-      width: 14%
-
-@media screen and (min-width: 1300px)
-  .navbar
-    div.left-items
-      width: 28%
-      ul.navlist
-        width: 53%
-    div.right-items
-      width: 13%
 
     
   
