@@ -76,6 +76,7 @@
 
 /* line 45, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
 .post-wrapper .post .text-container .article-content h4 {
+  font-family: 'Josefin Sans';
   font-size: 1.2rem;
   margin: 0 0 10px;
   color: #5F626F;
@@ -85,7 +86,7 @@
   overflow: hidden;
 }
 
-/* line 53, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
+/* line 54, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
 .post-wrapper .post .text-container .article-content p {
   font-size: 1.0rem;
   margin: 10px 0;
@@ -96,13 +97,13 @@
   overflow: hidden;
 }
 
-/* line 61, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
+/* line 62, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
 .post-wrapper .post .text-container a#more {
   font-size: .9rem;
   margin-left: auto;
 }
 
-/* line 64, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
+/* line 65, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
 .post-wrapper .post .text-container a#more::after {
   content: "\27f6";
   color: #372865;
@@ -272,7 +273,7 @@ div.dropdown-menu a img {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   /* line 55, D:/Projects/htmlCSS/credit-locus/sass/layouts/_navbar.sass */
   .navbar .left-items ul.navlist {
     display: none;
@@ -377,7 +378,7 @@ section.intro .intro-content .image-right img {
 @media screen and (max-width: 949px) {
   /* line 64, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content {
-    padding-top: 10%;
+    padding-top: 15%;
     text-align: center;
   }
   /* line 67, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
@@ -633,7 +634,7 @@ section.offer .offer-content .text-right p {
   /* line 83, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
   section.offer .offer-content {
     flex-direction: column;
-    padding-top: 50px;
+    padding: 100px 0;
   }
   /* line 86, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
   section.offer .offer-content .amt-card-left {
@@ -754,7 +755,7 @@ section.loans .loans-content .text-left .play-video .play-cont span {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-40%, -51%);
   color: #fff;
 }
 
@@ -774,50 +775,51 @@ section.loans .loans-content .image-right img {
   /* line 50, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content {
     flex-direction: column-reverse;
+    padding: 100px 0;
   }
-  /* line 52, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 53, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .image-right {
     width: 100%;
   }
-  /* line 54, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 55, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .image-right img {
     width: 100%;
     height: auto;
     margin: 0 auto;
     display: flex;
   }
-  /* line 59, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 60, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .text-left {
     margin-bottom: 30px;
     text-align: center;
   }
-  /* line 62, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 63, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .text-left .payment, section.loans .loans-content .text-left .play-video {
     justify-content: center;
   }
 }
 
 @media screen and (max-width: 600px) {
-  /* line 70, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 71, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .image-right img {
     width: 100%;
   }
-  /* line 73, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 74, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .text-left h3 {
     font-size: 2.2rem;
   }
-  /* line 77, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 78, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .text-left .play-video .play-cont span {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 1300px) {
-  /* line 84, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 85, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .text-left {
     max-width: 50%;
   }
-  /* line 86, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 87, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .text-left h3 {
     font-size: 3.0rem;
   }
@@ -861,7 +863,7 @@ section.cash-flow .cash-flow-content .text-and-photo .right img {
 
 /* line 21, D:/Projects/htmlCSS/credit-locus/sass/layouts/_cash-flow-section.sass */
 section.cash-flow .cash-flow-content p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #ffffff;
   text-align: center;
   font-weight: 400;
@@ -952,45 +954,49 @@ section.approval .approval-content .approval-grid .approval-item .text-container
 /* line 31, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
 section.approval .approval-content .approval-grid .approval-item .text-container h4 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #5F626F;
 }
 
 /* line 35, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
 section.approval .approval-content .approval-grid .approval-item .text-container p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #909ABB;
   margin-top: 10px;
   font-weight: 600;
 }
 
 @media screen and (max-width: 1060px) {
-  /* line 45, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
+  /* line 44, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
+  section.approval .approval-content {
+    padding: 100px 0;
+  }
+  /* line 46, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
   section.approval .approval-content h3 {
     font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 600px) {
-  /* line 51, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
+  /* line 52, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
   section.approval .approval-content h3 {
     font-size: 2.3rem;
   }
-  /* line 53, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
+  /* line 54, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
   section.approval .approval-content .approval-grid {
     width: 100%;
   }
-  /* line 56, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
+  /* line 57, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
   section.approval .approval-content .approval-grid .approval-item img {
     height: 75px;
   }
-  /* line 59, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
+  /* line 60, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
   section.approval .approval-content .approval-grid .approval-item .text-container h4 {
-    font-size: 1.3rem;
-  }
-  /* line 61, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
-  section.approval .approval-content .approval-grid .approval-item .text-container p {
     font-size: 1.2rem;
+  }
+  /* line 62, D:/Projects/htmlCSS/credit-locus/sass/layouts/_approval-section.sass */
+  section.approval .approval-content .approval-grid .approval-item .text-container p {
+    font-size: 1.1rem;
   }
 }
 
@@ -1043,24 +1049,29 @@ section.faq .faq-content .accordion-container .accordion:focus, section.faq .faq
 
 /* line 31, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
 section.faq .faq-content .accordion-container .accordion:after {
-  content: '\02C5';
-  font-size: 15px;
-  color: #777;
+  content: '';
+  background-image: url("../assets/icons/chevron-down.svg");
   float: right;
   margin-left: 10px;
+  margin-right: 10px;
+  height: 25px;
+  width: 25px;
+  color: #5F626F;
 }
 
-/* line 37, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
+/* line 40, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
 section.faq .faq-content .accordion-container .active {
   border-bottom: none;
 }
 
-/* line 39, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
+/* line 42, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
 section.faq .faq-content .accordion-container .active:after {
-  content: "\02C4";
+  content: "";
+  background-image: url("../assets/icons/chevron-down.svg");
+  transform: ScaleY(-1);
 }
 
-/* line 41, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
+/* line 46, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
 section.faq .faq-content .accordion-container .panel {
   color: #5F626F;
   justify-content: center;
@@ -1070,7 +1081,7 @@ section.faq .faq-content .accordion-container .panel {
   transition: max-height 0.2s ease-out;
 }
 
-/* line 48, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
+/* line 53, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
 section.faq .faq-content .accordion-container .panel p {
   margin: 0;
   margin-bottom: 20px;
@@ -1079,32 +1090,35 @@ section.faq .faq-content .accordion-container .panel p {
   text-align: left;
 }
 
-/* line 54, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
+/* line 59, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
 section.faq .faq-content p {
-  margin-top: 40px;
-  margin-bottom: 0;
+  margin: 40px 0;
   font-size: 1.1rem;
 }
 
-/* line 58, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
+/* line 62, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
 section.faq .faq-content p span {
   font-weight: 500;
   color: #5F8FBE;
 }
 
 @media screen and (max-width: 1060px) {
-  /* line 67, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
+  /* line 70, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
+  section.faq .faq-content {
+    padding: 100px 0;
+  }
+  /* line 72, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
   section.faq .faq-content .accordion-container {
     width: 100%;
   }
 }
 
 @media screen and (max-widh: 600px) {
-  /* line 74, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
+  /* line 79, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
   section.faq .faq-content .accordion-container .accordion {
     font-size: 1.0rem;
   }
-  /* line 77, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
+  /* line 82, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
   section.faq .faq-content .accordion-container .panel p {
     font-size: 1.0rem;
   }
@@ -1212,14 +1226,86 @@ section.blog .blog-content h3 {
 
 /* line 14, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .filter-bar {
-  width: 100%;
+  height: 60px;
+  width: 80%;
   display: flex;
   margin: 0 auto;
-  justify-content: center;
+  background-color: #fff;
   margin-bottom: 30px;
+  border-radius: 20px;
 }
 
-/* line 20, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 22, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .select-container {
+  flex: 1;
+}
+
+/* line 24, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .select-container select#filter {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #FAF9FF;
+  padding: 0 15px;
+  position: relative;
+}
+
+/* line 31, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .select-container select#filter:focus {
+  outline: none;
+}
+
+/* line 33, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .select-container select#filter::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: .75px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #909ABB;
+}
+
+/* line 42, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .search-container {
+  flex: 1;
+  border-radius: 20px 0 0 20px;
+}
+
+/* line 45, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .search-container input#search {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background-color: #FAF9FF;
+  padding-left: 15px;
+  border-radius: inherit;
+}
+
+/* line 53, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .search-container input#search:focus {
+  outline: none;
+}
+
+/* line 55, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .button-container {
+  flex: 0.5;
+  border-radius: 0 20px 20px 0;
+}
+
+/* line 58, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+section.blog .blog-content .filter-bar .button-container a.search-btn {
+  width: 100%;
+  height: 100%;
+  background-color: #372865;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: inherit;
+}
+
+/* line 65, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .filter-bar .input-container {
   width: 38%;
   height: 50px;
@@ -1229,7 +1315,7 @@ section.blog .blog-content .filter-bar .input-container {
   border-radius: 15px 0 0 15px;
 }
 
-/* line 27, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 72, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .filter-bar .input-container select#filter {
   width: 70%;
   height: 100%;
@@ -1242,12 +1328,12 @@ section.blog .blog-content .filter-bar .input-container select#filter {
   border-radius: inherit;
 }
 
-/* line 37, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 82, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .filter-bar .input-container select#filter:focus {
   outline: none;
 }
 
-/* line 39, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 84, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .filter-bar .input-container a.search-btn {
   width: 25%;
   height: 100%;
@@ -1257,7 +1343,7 @@ section.blog .blog-content .filter-bar .input-container a.search-btn {
   border-radius: 0 15px 15px 0;
 }
 
-/* line 46, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 91, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .filter-bar .input-container input#search {
   width: 70%;
   height: 100%;
@@ -1268,12 +1354,12 @@ section.blog .blog-content .filter-bar .input-container input#search {
   border-radius: inherit;
 }
 
-/* line 54, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 99, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .filter-bar .input-container input#search:focus {
   outline: none;
 }
 
-/* line 56, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 101, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper {
   width: 100%;
   display: grid;
@@ -1283,7 +1369,7 @@ section.blog .blog-content .post-wrapper {
   justify-content: center;
 }
 
-/* line 63, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 108, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post {
   height: 485px;
   width: 330px;
@@ -1296,20 +1382,20 @@ section.blog .blog-content .post-wrapper .post {
   border-top-right-radius: 15px;
 }
 
-/* line 71, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 116, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .image-container {
   height: 40%;
   border-radius: 15px 15px 0 0;
 }
 
-/* line 74, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 119, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .image-container img {
   height: 100%;
   width: 100%;
   border-radius: inherit;
 }
 
-/* line 78, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 123, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .text-container {
   display: flex;
   flex-direction: column;
@@ -1321,19 +1407,19 @@ section.blog .blog-content .post-wrapper .post .text-container {
   background-color: #fbfbfb;
 }
 
-/* line 87, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 132, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .text-container .line-one {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 90, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 135, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .text-container .line-one span {
   font-size: .9rem;
   color: #909ABB;
 }
 
-/* line 93, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 138, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .text-container .line-one span#cat::before {
   content: "\2022";
   color: #5F626F;
@@ -1341,13 +1427,14 @@ section.blog .blog-content .post-wrapper .post .text-container .line-one span#ca
   font-weight: 800;
 }
 
-/* line 98, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 143, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .text-container .article-content {
   height: 65%;
 }
 
-/* line 100, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 145, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .text-container .article-content h4 {
+  font-family: 'Josefin Sans';
   font-size: 1.2rem;
   margin: 0 0 10px;
   color: #5F626F;
@@ -1357,7 +1444,7 @@ section.blog .blog-content .post-wrapper .post .text-container .article-content 
   overflow: hidden;
 }
 
-/* line 108, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 154, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .text-container .article-content p {
   font-size: 1.0rem;
   margin: 10px 0;
@@ -1368,13 +1455,13 @@ section.blog .blog-content .post-wrapper .post .text-container .article-content 
   overflow: hidden;
 }
 
-/* line 116, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 162, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .text-container a#more {
   font-size: .9rem;
   margin-left: auto;
 }
 
-/* line 119, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
+/* line 165, D:/Projects/htmlCSS/credit-locus/sass/layouts/_blog-section.sass */
 section.blog .blog-content .post-wrapper .post .text-container a#more::after {
   content: "\27f6";
   color: #372865;
@@ -1622,9 +1709,10 @@ section.directors .director-content .leaders .leader-col span {
 /* line 79, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.company-info {
   height: auto;
+  min-height: unset;
 }
 
-/* line 81, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 82, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.company-info .company-info-content {
   width: 80%;
   margin: 0 auto;
@@ -1635,19 +1723,19 @@ section.company-info .company-info-content {
   padding: 30px 0 50px;
 }
 
-/* line 89, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 90, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.company-info .company-info-content h3 {
   font-size: 2.3rem;
   margin-bottom: 20px;
 }
 
-/* line 92, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 93, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.company-info .company-info-content p#address {
   text-align: center;
   font-size: 1.2rem;
 }
 
-/* line 95, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 96, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.company-info .company-info-content h5 {
   font-size: 1.6rem;
   margin: 0;

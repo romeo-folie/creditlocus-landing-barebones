@@ -29,15 +29,20 @@ section.faq
         &:focus,hover
           outline: none 
         &:after
-          content: '\02C5'
-          font-size: 15px
-          color: #777
+          content: ''
+          background-image: url('../assets/icons/chevron-down.svg')
           float: right  
           margin-left: 10px
+          margin-right: 10px
+          height: 25px
+          width: 25px
+          color: $sub-text
       .active
         border-bottom: none
         &:after
-          content: "\02C4"
+          content: ""
+          background-image: url('../assets/icons/chevron-down.svg')
+          transform: ScaleY(-1)
       .panel
         color: $sub-text
         justify-content: center
@@ -52,8 +57,7 @@ section.faq
           color: $sub-text-light
           text-align: left
     p
-      margin-top: 40px
-      margin-bottom: 0
+      margin: 40px 0
       font-size: 1.1rem
       span
         font-weight: 500
@@ -64,6 +68,7 @@ section.faq
 @media screen and (max-width: 1060px)
   section.faq
     .faq-content
+      padding: 100px 0
       .accordion-container
         width: 100%
 

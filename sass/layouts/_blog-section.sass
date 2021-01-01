@@ -12,11 +12,56 @@ section.blog
       font-size: 3.0rem
       color: $primary
     .filter-bar
-      width: 100%
+      height: 60px
+      width: 80%
       display: flex
       margin: 0 auto
-      justify-content: center
+      background-color: #fff
       margin-bottom: 30px
+      border-radius: 20px
+      .select-container
+        flex: 1
+        select#filter
+          width: 100%
+          height: 100%
+          border: none
+          background-color: $input-bg
+          padding: 0 15px
+          position: relative
+          &:focus
+            outline: none
+          &::after
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            width: .75px
+            height: 100%
+            margin: 0 auto
+            background-color: $sub-text-light
+      .search-container
+        flex: 1
+        border-radius: 20px 0 0 20px
+        input#search
+          width: 100%
+          height: 100%
+          padding: 0
+          border: none
+          background-color: $input-bg
+          padding-left: 15px
+          border-radius: inherit
+          &:focus
+            outline: none
+      .button-container
+        flex: 0.5
+        border-radius: 0 20px 20px 0
+        a.search-btn
+          width: 100%
+          height: 100%
+          background-color: $primary
+          color: #fff
+          font-size: 1rem
+          border-radius: inherit
       .input-container
         width: 38%
         height: 50px
@@ -98,6 +143,7 @@ section.blog
           .article-content
             height: 65%
             h4
+              font-family: 'Josefin Sans'
               font-size: 1.2rem
               margin: 0 0 10px
               color: $sub-text
