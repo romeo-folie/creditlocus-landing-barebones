@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans|Josefin+Sans&display=swap");
 /* line 1, D:/Projects/htmlCSS/credit-locus/sass/_extends.sass */
 .post-wrapper, section.related-posts .related-post-content .post-wrapper {
   width: 100%;
@@ -107,9 +109,9 @@
   margin-left: 5px;
 }
 
-/* line 3, D:/Projects/htmlCSS/credit-locus/sass/base/_base.sass */
+/* line 5, D:/Projects/htmlCSS/credit-locus/sass/base/_base.sass */
 body {
-  font-family: 'Space Grotesk', 'sans-serif', 'serif';
+  font-family: 'DM Sans', 'sans-serif', 'serif';
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -119,7 +121,17 @@ body {
   overflow-x: hidden;
 }
 
-/* line 14, D:/Projects/htmlCSS/credit-locus/sass/base/_base.sass */
+/* line 15, D:/Projects/htmlCSS/credit-locus/sass/base/_base.sass */
+h3 {
+  font-family: 'Josefin Sans';
+}
+
+/* line 18, D:/Projects/htmlCSS/credit-locus/sass/base/_base.sass */
+button {
+  font-family: 'DM Sans';
+}
+
+/* line 21, D:/Projects/htmlCSS/credit-locus/sass/base/_base.sass */
 ul {
   list-style: none;
   text-decoration: none;
@@ -127,7 +139,7 @@ ul {
   padding: 0;
 }
 
-/* line 20, D:/Projects/htmlCSS/credit-locus/sass/base/_base.sass */
+/* line 27, D:/Projects/htmlCSS/credit-locus/sass/base/_base.sass */
 a {
   display: flex;
   align-items: center;
@@ -137,17 +149,17 @@ a {
   font-weight: 700;
 }
 
-/* line 27, D:/Projects/htmlCSS/credit-locus/sass/base/_base.sass */
+/* line 34, D:/Projects/htmlCSS/credit-locus/sass/base/_base.sass */
 a:focus {
   outline: none;
 }
 
-/* line 29, D:/Projects/htmlCSS/credit-locus/sass/base/_base.sass */
+/* line 36, D:/Projects/htmlCSS/credit-locus/sass/base/_base.sass */
 a:active {
   color: #372865;
 }
 
-/* line 32, D:/Projects/htmlCSS/credit-locus/sass/base/_base.sass */
+/* line 39, D:/Projects/htmlCSS/credit-locus/sass/base/_base.sass */
 section {
   width: 100%;
   min-height: 100vh;
@@ -287,14 +299,16 @@ section.intro .intro-content {
 
 /* line 10, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left h2 {
+  font-family: 'Josefin Sans';
   font-size: 4.2rem;
   color: #372865;
   margin-top: 25px;
   margin-bottom: 0;
 }
 
-/* line 15, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 16, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left h4 {
+  font-family: 'DM Sans';
   color: #372865;
   font-size: 1.2rem;
   font-weight: 400;
@@ -302,7 +316,7 @@ section.intro .intro-content .text-left h4 {
   margin-bottom: 30px;
 }
 
-/* line 21, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 23, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left .email-input {
   height: 55px;
   position: relative;
@@ -310,8 +324,9 @@ section.intro .intro-content .text-left .email-input {
   justify-content: space-between;
 }
 
-/* line 26, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 28, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left .email-input input {
+  font-family: 'DM Sans';
   border: none;
   border-radius: 25px;
   width: 100%;
@@ -323,18 +338,19 @@ section.intro .intro-content .text-left .email-input input {
   color: #909ABB;
 }
 
-/* line 36, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 39, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left .email-input input:focus {
   outline: none;
 }
 
-/* line 38, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 41, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left .email-input input::placeholder {
   color: #909ABB;
 }
 
-/* line 40, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 43, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .text-left .email-input a.join-btn {
+  font-family: 'DM Sans';
   position: absolute;
   top: 0;
   right: 0;
@@ -348,50 +364,51 @@ section.intro .intro-content .text-left .email-input a.join-btn {
   font-size: 1.0rem;
 }
 
-/* line 52, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 56, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .image-right {
   max-width: 50%;
 }
 
-/* line 54, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+/* line 58, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
 section.intro .intro-content .image-right img {
   height: 650px;
 }
 
 @media screen and (max-width: 949px) {
-  /* line 60, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 64, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content {
+    padding-top: 10%;
     text-align: center;
   }
-  /* line 62, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 67, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left {
     width: 100%;
   }
-  /* line 64, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 69, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h2 {
     margin-top: 0;
   }
-  /* line 66, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 71, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left .email-input {
     width: 80%;
     margin: 0 auto;
   }
-  /* line 69, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 74, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .image-right {
     display: none;
   }
 }
 
 @media screen and (max-width: 599px) {
-  /* line 76, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 81, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h2 {
     font-size: 2.6rem;
   }
-  /* line 78, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 83, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h4 {
     font-size: 1.2rem;
   }
-  /* line 80, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 85, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left .email-input {
     position: static;
     width: 100%;
@@ -400,14 +417,14 @@ section.intro .intro-content .image-right img {
     align-items: center;
     text-align: center;
   }
-  /* line 87, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 92, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left .email-input input {
     font-size: 0.9rem;
     padding: 0 15px;
     text-align: center;
     height: 60px;
   }
-  /* line 92, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 97, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left .email-input a.join-btn {
     position: static;
     font-size: 0.9rem;
@@ -418,77 +435,77 @@ section.intro .intro-content .image-right img {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 104, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 109, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h2 {
     font-size: 4.0rem;
   }
-  /* line 106, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 111, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h4 {
     font-size: 1.3rem;
   }
 }
 
 @media screen and (min-width: 950px) {
-  /* line 113, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 118, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h2 {
     font-size: 3.3rem;
   }
-  /* line 115, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 120, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h4 {
     font-size: 1.0rem;
   }
-  /* line 118, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 123, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left .email-input a.join-btn {
     font-size: .8rem;
     width: 30%;
   }
-  /* line 122, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 127, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .image-right img {
     height: 600px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 129, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 134, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h2 {
     font-size: 3.5rem;
   }
-  /* line 131, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 136, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h4 {
     font-size: 1.0rem;
   }
-  /* line 134, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 139, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left .email-input a.join-btn {
     font-size: .9rem;
     width: 30%;
   }
-  /* line 138, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 143, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .image-right img {
     height: 620px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 145, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 150, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h2 {
     font-size: 4.0rem;
   }
-  /* line 147, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 152, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h4 {
     font-size: 1.1rem;
   }
-  /* line 150, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 155, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .image-right img {
     height: 640px;
   }
 }
 
 @media screen and (min-width: 1300px) {
-  /* line 157, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 162, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h2 {
     font-size: 4.5rem;
   }
-  /* line 160, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
+  /* line 165, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .image-right img {
     height: 700px;
   }
@@ -506,7 +523,7 @@ section.offer .offer-content {
 
 /* line 9, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
 section.offer .offer-content .amt-card-left {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 /* line 11, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
@@ -598,37 +615,39 @@ section.offer .offer-content .amt-card-left .amt-card-bg span#ill {
 
 /* line 69, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
 section.offer .offer-content .text-right h3 {
+  font-family: 'Josefin Sans';
   font-size: 2.6rem;
   margin-top: 0;
   color: #372865;
 }
 
-/* line 73, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+/* line 74, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
 section.offer .offer-content .text-right p {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-family: 'DM Sans';
+  font-size: 1.3rem;
+  font-weight: 500;
   color: #5F626F;
 }
 
 @media screen and (max-width: 1000px) {
-  /* line 81, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+  /* line 83, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
   section.offer .offer-content {
     flex-direction: column;
     padding-top: 50px;
   }
-  /* line 84, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+  /* line 86, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
   section.offer .offer-content .amt-card-left {
     margin-bottom: 50px;
     margin-right: auto;
     width: 100%;
   }
-  /* line 88, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+  /* line 90, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
   section.offer .offer-content .amt-card-left .amt-card-bg {
     margin: 0 auto;
     width: 100%;
     height: 750px;
   }
-  /* line 92, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+  /* line 94, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
   section.offer .offer-content .text-right {
     margin: 50px 0;
     text-align: center;
@@ -636,36 +655,40 @@ section.offer .offer-content .text-right p {
 }
 
 @media screen and (max-width: 600px) {
-  /* line 99, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+  /* line 101, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
   section.offer .offer-content .amt-card-left {
     margin-right: auto;
   }
-  /* line 101, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+  /* line 103, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
   section.offer .offer-content .amt-card-left .amt-card-bg {
     width: 100%;
     height: 450px;
   }
-  /* line 106, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+  /* line 108, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
   section.offer .offer-content .amt-card-left .amt-card-bg .amt-card .amt-card-content h3 {
     font-size: 2.2rem;
   }
-  /* line 109, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+  /* line 111, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
   section.offer .offer-content .text-right h3 {
     font-size: 2.2rem;
   }
-  /* line 111, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+  /* line 113, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
   section.offer .offer-content .text-right p {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 1300px) {
-  /* line 118, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+  /* line 120, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
   section.offer .offer-content .amt-card-left .amt-card-bg {
     height: 600px;
     width: 470px;
   }
-  /* line 122, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+  /* line 123, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
+  section.offer .offer-content .text-right {
+    max-width: 50%;
+  }
+  /* line 125, D:/Projects/htmlCSS/credit-locus/sass/layouts/_offer-section.sass */
   section.offer .offer-content .text-right h3 {
     font-size: 3.0rem;
   }
@@ -731,7 +754,7 @@ section.loans .loans-content .text-left .play-video .play-cont span {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-40%, -45%);
+  transform: translate(-50%, -50%);
   color: #fff;
 }
 
@@ -790,7 +813,11 @@ section.loans .loans-content .image-right img {
 }
 
 @media screen and (min-width: 1300px) {
-  /* line 85, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 84, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  section.loans .loans-content .text-left {
+    max-width: 50%;
+  }
+  /* line 86, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .text-left h3 {
     font-size: 3.0rem;
   }
@@ -834,7 +861,7 @@ section.cash-flow .cash-flow-content .text-and-photo .right img {
 
 /* line 21, D:/Projects/htmlCSS/credit-locus/sass/layouts/_cash-flow-section.sass */
 section.cash-flow .cash-flow-content p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #ffffff;
   text-align: center;
   font-weight: 400;
@@ -865,6 +892,13 @@ section.cash-flow .cash-flow-content p {
   /* line 49, D:/Projects/htmlCSS/credit-locus/sass/layouts/_cash-flow-section.sass */
   section.cash-flow .cash-flow-content p {
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  /* line 57, D:/Projects/htmlCSS/credit-locus/sass/layouts/_cash-flow-section.sass */
+  section.cash-flow .cash-flow-content .text-and-photo .left {
+    max-width: 45%;
   }
 }
 
@@ -988,7 +1022,7 @@ section.faq .faq-content .accordion-container .accordion {
   text-align: left;
   color: #5F626F;
   transition: 0.4s;
-  padding: 20px;
+  padding: 25px 0;
   padding-left: 0;
   border: none;
   outline: none;
@@ -1013,7 +1047,7 @@ section.faq .faq-content .accordion-container .accordion:after {
   font-size: 15px;
   color: #777;
   float: right;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 /* line 37, D:/Projects/htmlCSS/credit-locus/sass/layouts/_faq-section.sass */
