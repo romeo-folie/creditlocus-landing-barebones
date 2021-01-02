@@ -8,13 +8,11 @@ section.intro
     max-width: 1240px
     .text-left
       h2
-        font-family: 'Josefin Sans'
         font-size: 4.2rem
         color: $primary
         margin-top: 25px
         margin-bottom: 0
       h4
-        font-family: 'DM Sans'
         color: $primary
         font-size: 1.2rem
         font-weight: 400
@@ -26,7 +24,6 @@ section.intro
         display: flex
         justify-content: space-between
         input
-          font-family: 'DM Sans'
           border: none
           border-radius: 25px
           width: 100%
@@ -41,7 +38,6 @@ section.intro
           &::placeholder
             color: $sub-text-light
         a.join-btn
-          font-family: 'DM Sans'
           position: absolute
           top: 0
           right: 0
@@ -68,11 +64,17 @@ section.intro
         width: 100%
         h2
           margin-top: 0
-        .email-input
-          width: 80%
-          margin: 0 auto
       .image-right
         display: none
+      .email-input
+        width: 80%
+        margin: 0 auto
+
+@media screen and (max-width: 640px)
+  section.intro
+    .intro-content
+      .email-input
+        width: 100%
 
 @media screen and (max-width: 599px)
   section.intro
