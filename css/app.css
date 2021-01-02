@@ -5,7 +5,7 @@
 .post-wrapper, section.related-posts .related-post-content .post-wrapper {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 30px 20px;
   margin: 30px 0 50px;
   justify-content: center;
@@ -1763,7 +1763,7 @@ section.related-posts .related-post-content hr {
 
 /* line 6, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.statements {
-  height: 100vh;
+  height: auto;
 }
 
 /* line 8, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
@@ -1771,28 +1771,30 @@ section.statements .statement-content {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  padding-top: 100px;
+  margin-bottom: 40px;
 }
 
-/* line 12, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 14, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.statements .statement-content h3 {
   font-size: 3.0rem;
 }
 
-/* line 14, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 16, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.statements .statement-content p {
   margin-top: 30px;
   font-size: 1.2rem;
   text-align: left;
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
 }
 
-/* line 21, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 23, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.leadership {
   height: auto;
 }
 
-/* line 23, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 25, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.leadership .leadership-content {
   width: 80%;
   margin: 0 auto;
@@ -1803,13 +1805,13 @@ section.leadership .leadership-content {
   padding-bottom: 50px;
 }
 
-/* line 31, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 33, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.leadership .leadership-content h3 {
   font-size: 2.3rem;
   margin-bottom: 0;
 }
 
-/* line 34, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 36, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.leadership .leadership-content .leaders {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 29%));
@@ -1817,33 +1819,33 @@ section.leadership .leadership-content .leaders {
   margin: 50px 0;
 }
 
-/* line 39, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 41, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.leadership .leadership-content .leaders .leader-col {
   text-align: center;
 }
 
-/* line 41, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 43, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.leadership .leadership-content .leaders .leader-col img {
   max-width: 300px;
 }
 
-/* line 43, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 45, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.leadership .leadership-content .leaders .leader-col h4 {
   font-size: 1.3rem;
   margin: 10px 0 8px;
 }
 
-/* line 46, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 48, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.leadership .leadership-content .leaders .leader-col span {
   font-size: 1.1rem;
 }
 
-/* line 50, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 52, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.directors {
   height: auto;
 }
 
-/* line 52, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 54, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.directors .director-content {
   width: 80%;
   margin: 0 auto;
@@ -1854,13 +1856,13 @@ section.directors .director-content {
   padding: 50px 0;
 }
 
-/* line 60, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 62, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.directors .director-content h3 {
   font-size: 2.3rem;
   margin-bottom: 0;
 }
 
-/* line 63, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 65, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.directors .director-content .leaders {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 29%));
@@ -1868,34 +1870,34 @@ section.directors .director-content .leaders {
   margin: 50px 0;
 }
 
-/* line 68, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 70, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.directors .director-content .leaders .leader-col {
   text-align: center;
 }
 
-/* line 70, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 72, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.directors .director-content .leaders .leader-col img {
   max-width: 300px;
 }
 
-/* line 72, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 74, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.directors .director-content .leaders .leader-col h4 {
   font-size: 1.3rem;
   margin: 10px 0 8px;
 }
 
-/* line 75, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 77, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.directors .director-content .leaders .leader-col span {
   font-size: 1.1rem;
 }
 
-/* line 79, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 81, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.company-info {
   height: auto;
   min-height: unset;
 }
 
-/* line 82, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 84, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.company-info .company-info-content {
   width: 80%;
   margin: 0 auto;
@@ -1906,22 +1908,54 @@ section.company-info .company-info-content {
   padding: 30px 0 50px;
 }
 
-/* line 90, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 92, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.company-info .company-info-content h3 {
   font-size: 2.3rem;
   margin-bottom: 20px;
 }
 
-/* line 93, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 95, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.company-info .company-info-content p#address {
   text-align: center;
   font-size: 1.2rem;
 }
 
-/* line 96, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+/* line 98, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
 section.company-info .company-info-content h5 {
   font-size: 1.6rem;
   margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 107, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+  section.statements .statement-content h3 {
+    font-size: 2.1rem;
+  }
+  /* line 112, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+  section.company-info .company-info-content h3 {
+    font-size: 2.0rem;
+  }
+  /* line 114, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+  section.company-info .company-info-content p#address {
+    font-size: 1.1rem;
+  }
+  /* line 116, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+  section.company-info .company-info-content h5 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  /* line 124, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+  section.statements .statement-content h3 {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* line 128, D:/Projects/htmlCSS/credit-locus/sass/layouts/_about-section.sass */
+  section.statements .statement-content p {
+    width: 75%;
+  }
 }
 
 /* line 1, D:/Projects/htmlCSS/credit-locus/sass/layouts/_footer.sass */
