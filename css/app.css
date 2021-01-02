@@ -1709,18 +1709,32 @@ section.post .post-content .article-wrapper div#ad {
   section.post .post-content h3 {
     font-size: 2.1rem;
   }
+  /* line 52, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
+  section.post .post-content .article-wrapper {
+    display: block;
+  }
+  /* line 54, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
+  section.post .post-content .article-wrapper article {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /* line 57, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
+  section.post .post-content .article-wrapper div#ad {
+    width: 100%;
+    height: 120px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-  /* line 57, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
+  /* line 65, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
   section.post .post-content h3 {
     width: 50%;
   }
-  /* line 59, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
+  /* line 67, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
   section.post .post-content img {
     width: 80%;
   }
-  /* line 61, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
+  /* line 69, D:/Projects/htmlCSS/credit-locus/sass/layouts/_article-section.sass */
   section.post .post-content .article-wrapper {
     width: 80%;
   }
