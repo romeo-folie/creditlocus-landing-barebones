@@ -12,56 +12,78 @@ section.blog
       font-size: 3.0rem
       color: $primary
     .filter-bar
-      height: 60px
-      width: 80%
+      height: 50px
+      width: 75%
       display: flex
       margin: 0 auto
-      background-color: #fff
+      background-color: $input-bg
       margin-bottom: 30px
       border-radius: 20px
-      .select-container
-        flex: 1
-        select#filter
-          width: 100%
-          height: 100%
-          border: none
-          background-color: $input-bg
-          padding: 0 15px
-          position: relative
-          &:focus
-            outline: none
-          &::after
-            content: ''
-            position: absolute
-            top: 0
-            right: 0
-            width: .75px
+      padding: 10px
+      .filter-bar-content
+        width: 100%
+        height: 100%
+        display: flex
+        .select-container
+          flex: 1
+          select#filter
+            width: 100%
             height: 100%
-            margin: 0 auto
+            border: none
+            background-color: $input-bg
+            padding: 0 15px
+            position: relative
+            &:focus
+              outline: none
+            &::after
+              content: ''
+              position: absolute
+              top: 0
+              right: 0
+              width: .75px
+              height: 100%
+              margin: 0 auto
+              background-color: $sub-text-light
+        .search-container
+          display: flex
+          align-items: center
+          position: relative
+          flex: 1
+          border-radius: 20px 0 0 20px
+          input#search
+            width: 100%
+            height: 100%
+            padding: 0
+            border: none
+            background-color: $input-bg
+            padding-left: 10px
+            border-radius: inherit
+            &:focus
+              outline: none
+          .vertical-line
+            width: .75px
+            height: 70%
+            position: absolute
+            right: 0
             background-color: $sub-text-light
-      .search-container
-        flex: 1
-        border-radius: 20px 0 0 20px
-        input#search
-          width: 100%
-          height: 100%
-          padding: 0
-          border: none
-          background-color: $input-bg
-          padding-left: 15px
-          border-radius: inherit
-          &:focus
-            outline: none
-      .button-container
-        flex: 0.5
-        border-radius: 0 20px 20px 0
-        a.search-btn
-          width: 100%
-          height: 100%
-          background-color: $primary
-          color: #fff
-          font-size: 1rem
-          border-radius: inherit
+          img
+            position: absolute
+            right: 15px
+            height: 15px
+            width: 15px
+        .button-container
+          flex: 0.5
+          border-radius: 0 20px 20px 0
+          margin-left: 10px
+          a.search-btn
+            width: 100%
+            height: 100%
+            background-color: $primary
+            color: #fff
+            font-size: 1rem
+            border-radius: 20px
+            img
+              display: none
       .input-container
         width: 38%
         height: 50px
@@ -101,18 +123,18 @@ section.blog
     .post-wrapper
       width: 100%
       display: grid
-      grid-template-columns: repeat(auto-fill, minmax(330px, 29%))
-      grid-gap: 30px 0
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr))
+      grid-gap: 30px 20px
       margin: 30px 0 50px 
       justify-content: center
       .post
-        height: 485px
-        width: 330px
+        height: 100%
         +card-shadow
         background-color: #fff
         border-radius: 0 0 15px 15px
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        border-top-left-radius: 15px
+        border-top-right-radius: 15px
+        margin: 0 auto
         .image-container
           height: 40%
           border-radius: 15px 15px 0 0
@@ -166,3 +188,60 @@ section.blog
               content: "\27f6"
               color: $primary
               margin-left: 5px
+    .pagination
+      display: flex
+      width: 80%
+      justify-content: center
+      margin: 10px 0 20px
+      a
+        margin-right: 5px
+        border-radius: 50%
+        padding: 3px 8px
+        &:first-of-type
+          margin-right: auto
+          &::before
+              content: "\27f6"
+              color: $primary
+              margin-right: 5px
+              transform: ScaleX(-1)
+          &:hover:not(.active)
+            background-color: unset
+        &:last-of-type
+          margin-left: auto
+          margin-right: 0
+          &::after
+              content: "\27f6"
+              color: $primary
+              margin-left: 5px
+          &:hover:not(.active)
+            background-color: unset
+        &.active
+          background-color: $primary
+          color: #fff
+        &:hover:not(.active)
+          background-color: $input-bg
+
+
+
+
+@media screen and (max-width: 640px)
+  section.blog
+    .blog-content
+      .filter-bar
+        width: 100%
+        .filter-bar-content
+          .button-container
+            a.search-btn
+              img
+                display: block
+              span
+                display: none
+
+@media screen and (min-width: 1280px)
+  section.blog
+    .blog-content
+      .post-wrapper
+        grid-template-columns: repeat(auto-fill, minmax(330px, 29%))
+      .filter-bar
+        width: 75%
+        
