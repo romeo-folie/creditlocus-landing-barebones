@@ -8,12 +8,12 @@ section.post
     a#back
       font-size: 1.2rem
       float: left
-      margin-left: 10%
+      width: 100%
+      margin: 0 auto 20px
       &::before
         content: "\27f5"
         margin-right: 5px
     h3
-      width: 50%
       font-size: 2.5rem
       margin: 30px auto 15px
     div#category
@@ -25,12 +25,12 @@ section.post
       font-size: 0.9rem
       color: $sub-text-light
     img  
-      width: 80%
+      width: 100%
       height: auto
       margin: 0 auto
       margin-bottom: 20px
     .article-wrapper
-      width: 80%
+      width: 100%
       margin: 0 auto
       text-align: left
       display: flex
@@ -44,3 +44,19 @@ section.post
         height: 480px
         background-color: lightgray
        
+@media screen and (max-width: 640px)
+  section.post
+    .post-content
+      h3
+        font-size: 2.1rem
+
+
+@media screen and (min-width: 1280px)
+  section.post
+    .post-content
+      h3
+        width: 50%
+      img
+        width: 80%
+      .article-wrapper
+        width: 80%
