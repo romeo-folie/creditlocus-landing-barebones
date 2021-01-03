@@ -121,6 +121,7 @@
     </section>
 
     <section class="loans">
+      <div class="overlay" id="overlay"></div>
       <div class="loans-content">
         <div class="text-left">
           <h3>
@@ -136,7 +137,7 @@
             <img src="assets/images/momo.png" alt="mobile-money-logo">
           </div>
 
-          <div class="play-video">
+          <div class="play-video" id="play-video" onclick="showVideo()">
             <div class="play-cont">
               <span>▶</span>
             </div>
@@ -147,6 +148,16 @@
         <div class="image-right">
           <img src="assets/images/card-group.png" alt="Transaction Cards">
         </div>
+
+
+        <div class="video-container" id="vid-cont">
+          <div class="video-content">
+            <div class="close-btn" onclick="hideVideo()">
+              <a href="javascript:void();"><img src="assets/icons/x.svg" alt=""></a>
+            </div>
+            <iframe src="https://www.youtube-nocookie.com/embed/mx3krJHlUzc?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&fs=0&controls=0&disablekb=1" width="560" height="315" frameborder="0"></iframe>          </div>
+        </div>
+
       </div>
     </section>
 

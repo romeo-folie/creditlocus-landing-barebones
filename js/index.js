@@ -49,3 +49,19 @@ function hideSideNav() {
     sideNavToggle.className = 'side-menu'
   }
 }
+
+function showVideo(){
+  //display overlay
+  //display video
+  const overlay = document.getElementById('overlay')
+  const videoContainer = document.getElementById('vid-cont')
+  overlay.style.display = 'block'
+  videoContainer.style.display = 'block'
+}
+
+function hideVideo(){
+  const overlay = document.getElementById('overlay')
+  const videoContainer = document.getElementById('vid-cont')
+  overlay.style.display = 'none'
+  videoContainer.style.display = 'none'
+}
