@@ -9,6 +9,20 @@ section.loans
     background-color: rgba(0,0,0,0.5)  
     z-index: 90
     display: none
+    .close-btn
+      position: absolute
+      top: 30%
+      right: 50%
+      background-color: #fff
+      border-radius: 50%
+      padding: 5px
+      z-index: 150
+      transform: translateX(50%)
+      a
+        img
+          height: 20px
+          width: 20px
+          z-index: 200
   .loans-content
     width: 80%
     margin: 0 auto
@@ -77,19 +91,6 @@ section.loans
           left: 0
           height: 100%
           width: 100%
-        .close-btn
-          position: absolute
-          top: 10px
-          right: 10px
-          background-color: #fff
-          border-radius: 50%
-          padding: 5px
-          z-index: 150
-          a
-            img
-              height: 20px
-              width: 20px
-              z-index: 200
 
 
 @media screen and (max-width: 1000px)
@@ -127,6 +128,11 @@ section.loans
 
 @media screen and (min-width: 1280px)
   section.loans
+    .overlay
+      .close-btn
+        top: 10%
+        right: 12%
+        transform: unset
     .loans-content
       .video-container
         width: 80%
