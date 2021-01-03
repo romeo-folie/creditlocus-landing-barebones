@@ -28,3 +28,24 @@ for (let i = 0; i < acc.length; i++) {
     
 //   })
 // } 
+
+function showSideNav() {
+  console.log("called")
+  const sideNavToggle = document.getElementById('side-nav')
+  // const mediaNav = document.getElementById('social-media-nav-bottom')
+  // mediaNav.style.visibility = 'hidden'
+  if (sideNavToggle.className === 'side-menu') {
+    sideNavToggle.className += ' show'
+  } else {
+    sideNavToggle.className = 'side-menu'
+  }
+}
+
+function hideSideNav() {
+  const sideNavToggle = document.getElementById('side-nav')
+  // const mediaNav = document.getElementById('social-media-nav-bottom')
+  // mediaNav.style.visibility = 'visible'
+  if (sideNavToggle.className === 'side-menu show') {
+    sideNavToggle.className = 'side-menu'
+  }
+}
