@@ -839,15 +839,16 @@ section.loans .loans-content .image-right .card-bg {
 }
 
 /* line 77, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
-section.loans .loans-content .image-right img {
+section.loans .loans-content .image-right .card-bg img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 90%;
+  max-width: 95%;
 }
 
-/* line 83, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+/* line 84, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
 section.loans .loans-content .video-container {
   width: 100%;
   position: absolute;
@@ -861,7 +862,7 @@ section.loans .loans-content .video-container {
   display: none;
 }
 
-/* line 92, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+/* line 93, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
 section.loans .loans-content .video-container .video-content {
   position: relative;
   padding-bottom: 56.25%;
@@ -870,7 +871,7 @@ section.loans .loans-content .video-container .video-content {
   overflow: hidden;
 }
 
-/* line 98, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+/* line 99, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
 section.loans .loans-content .video-container .video-content iframe {
   position: absolute;
   top: 0;
@@ -880,21 +881,21 @@ section.loans .loans-content .video-container .video-content iframe {
 }
 
 @media screen and (max-width: 1000px) {
-  /* line 108, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 109, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content {
     flex-direction: column-reverse;
     padding: 100px 0;
   }
-  /* line 111, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 112, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .image-right {
     width: 100%;
   }
-  /* line 113, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 114, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .image-right .card-bg {
     margin: 0 auto;
     width: 90%;
   }
-  /* line 116, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 117, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .image-right .card-bg img {
     height: 90%;
     width: auto;
@@ -902,56 +903,56 @@ section.loans .loans-content .video-container .video-content iframe {
     display: flex;
     max-width: 90%;
   }
-  /* line 122, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 123, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .text-left {
     margin-bottom: 30px;
     text-align: center;
   }
-  /* line 125, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 126, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .text-left .payment, section.loans .loans-content .text-left .play-video {
     justify-content: center;
   }
 }
 
 @media screen and (max-width: 600px) {
-  /* line 133, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 134, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .image-right .card-bg {
     margin: 0 auto;
     width: 100%;
   }
-  /* line 136, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 137, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .image-right .card-bg img {
     height: 80%;
   }
-  /* line 139, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 140, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .text-left h3 {
     font-size: 2.2rem;
   }
-  /* line 143, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 144, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .text-left .play-video .play-cont span {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  /* line 149, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 150, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .overlay .close-btn {
     top: 10%;
     right: 12%;
     transform: unset;
   }
-  /* line 154, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 155, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .text-left {
     max-width: 50%;
   }
-  /* line 156, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 157, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content .video-container {
     width: 80%;
   }
 }
 
 @media screen and (min-width: 1300px) {
-  /* line 162, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
+  /* line 163, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
   section.loans .loans-content h3 {
     font-size: 3.0rem;
   }
