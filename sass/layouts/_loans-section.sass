@@ -68,8 +68,18 @@ section.loans
           font-weight: 500
           font-size: 1.2rem
     .image-right
-      img
+      .card-bg
         height: 550px
+        width: 30vw
+        background-color: $card-bg
+        border-radius: 15px
+        position: relative
+      img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        height: 90%
     .video-container
       width: 100%
       position: absolute
@@ -100,11 +110,15 @@ section.loans
       padding: 100px 0
       .image-right
         width: 100%
-        img
-          width: 100%
-          height: auto
+        .card-bg
           margin: 0 auto
-          display: flex
+          width: 90%
+          img
+            height: 90%
+            width: auto
+            margin: 0 auto
+            display: flex
+            max-width: 90%
       .text-left
         margin-bottom: 30px
         text-align: center
@@ -116,8 +130,11 @@ section.loans
   section.loans
     .loans-content
       .image-right
-        img
+        .card-bg
+          margin: 0 auto
           width: 100%
+          img
+            height: 80%
       .text-left
         h3
           font-size: 2.2rem
@@ -134,14 +151,14 @@ section.loans
         right: 12%
         transform: unset
     .loans-content
+      .text-left
+        max-width: 50%
       .video-container
         width: 80%
 
 @media screen and (min-width: 1300px)
   section.loans
     .loans-content
-      .text-left
-        max-width: 50%
         h3
           font-size: 3.0rem
       
