@@ -1,28 +1,4 @@
 section.loans
-  position: relative
-  .overlay
-    position: absolute
-    top: 0
-    left: 0
-    bottom: 0
-    right: 0
-    background-color: rgba(0,0,0,0.5)  
-    z-index: 90
-    display: none
-    .close-btn
-      position: absolute
-      top: 30%
-      right: 50%
-      background-color: #fff
-      border-radius: 50%
-      padding: 5px
-      z-index: 150
-      transform: translateX(50%)
-      a
-        img
-          height: 20px
-          width: 20px
-          z-index: 200
   .loans-content
     width: 80%
     margin: 0 auto
@@ -70,7 +46,7 @@ section.loans
     .image-right
       .card-bg
         height: 550px
-        width: 30vw
+        width: 33vw
         background-color: $card-bg
         border-radius: 15px
         position: relative
@@ -87,7 +63,7 @@ section.loans
       top: 50%
       left: 50%
       transform: translate(-50%, -50%)
-      z-index: 100
+      z-index: 350
       +card-shadow
       display: none
       .video-content
@@ -119,7 +95,6 @@ section.loans
             width: auto
             margin: 0 auto
             display: flex
-            max-width: 90%
       .text-left
         margin-bottom: 30px
         text-align: center
@@ -135,7 +110,7 @@ section.loans
           margin: 0 auto
           width: 100%
           img
-            height: 80%
+            height: 85%
       .text-left
         h3
           font-size: 2.2rem
@@ -144,16 +119,16 @@ section.loans
             span
               font-size: 1.4rem
 
+@media screen and (min-width: 1024px)
+  section.loans
+   .loans-content
+     .text-left
+      max-width: 50%
+
+
 @media screen and (min-width: 1280px)
   section.loans
-    .overlay
-      .close-btn
-        top: 10%
-        right: 12%
-        transform: unset
     .loans-content
-      .text-left
-        max-width: 50%
       .video-container
         width: 80%
 

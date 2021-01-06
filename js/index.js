@@ -55,13 +55,17 @@ function showVideo(){
   //display video
   const overlay = document.getElementById('overlay')
   const videoContainer = document.getElementById('vid-cont')
+
   overlay.style.display = 'block'
   videoContainer.style.display = 'block'
+  // document.body.style.overflow = "hidden"
 }
 
 function hideVideo(){
   const overlay = document.getElementById('overlay')
   const videoContainer = document.getElementById('vid-cont')
+
   overlay.style.display = 'none'
   videoContainer.style.display = 'none'
+  // document.body.style.overflow = "visible"
 }
