@@ -30,7 +30,6 @@ for (let i = 0; i < acc.length; i++) {
 // } 
 
 function showSideNav() {
-  console.log("called")
   const sideNavToggle = document.getElementById('side-nav')
   // const mediaNav = document.getElementById('social-media-nav-bottom')
   // mediaNav.style.visibility = 'hidden'

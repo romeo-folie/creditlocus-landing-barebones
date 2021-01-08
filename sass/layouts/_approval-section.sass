@@ -22,7 +22,7 @@ section.approval
         align-items: flex-start
         justify-content: center
         img
-          height: 90px
+          height: 65px
           margin-right: 20px
         .text-container
           display: flex
@@ -54,11 +54,16 @@ section.approval
       .approval-grid
         width: 100%
         .approval-item
-          img
-            height: 75px
           .text-container
             h4
               font-size: 1.2rem
             p
               font-size: 1.1rem
-        
+
+
+@media screen and (min-width: 1300px)
+  section.approval
+    .approval-content
+      .approval-grid
+        .approval-item
+          height: 90px
