@@ -2309,27 +2309,27 @@ footer.bottom-nav .bottom-nav-content .final-line .social-media img:not(:last-of
 }
 
 /* line 1, D:/Projects/htmlCSS/credit-locus/sass/modules/_error_alert.sass */
-.alert-container {
+#error-alert-container {
   display: flex;
   align-items: center;
   background-color: rgba(255, 0, 0, 0.2);
   border-bottom: 3px solid rgba(255, 0, 0, 0.3);
   padding: 15px;
   position: absolute;
-  top: 5%;
+  top: 200px;
   right: 2%;
   border-radius: 5px;
 }
 
 /* line 11, D:/Projects/htmlCSS/credit-locus/sass/modules/_error_alert.sass */
-.alert-container .alert-icon {
+#error-alert-container .alert-icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 /* line 15, D:/Projects/htmlCSS/credit-locus/sass/modules/_error_alert.sass */
-.alert-container .alert-icon span {
+#error-alert-container .alert-icon span {
   border: 2px solid rgba(255, 0, 0, 0.5);
   border-radius: 50%;
   position: relative;
@@ -2339,7 +2339,7 @@ footer.bottom-nav .bottom-nav-content .final-line .social-media img:not(:last-of
 }
 
 /* line 22, D:/Projects/htmlCSS/credit-locus/sass/modules/_error_alert.sass */
-.alert-container .alert-icon span img {
+#error-alert-container .alert-icon span img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2349,20 +2349,78 @@ footer.bottom-nav .bottom-nav-content .final-line .social-media img:not(:last-of
 }
 
 /* line 29, D:/Projects/htmlCSS/credit-locus/sass/modules/_error_alert.sass */
-.alert-container .alert-content {
+#error-alert-container .alert-content {
   margin-left: 15px;
 }
 
 /* line 31, D:/Projects/htmlCSS/credit-locus/sass/modules/_error_alert.sass */
-.alert-container .alert-content .alert-title {
+#error-alert-container .alert-content .alert-title {
   color: rgba(255, 0, 0, 0.8);
   font-weight: 600;
   font-size: 1.1rem;
 }
 
 /* line 35, D:/Projects/htmlCSS/credit-locus/sass/modules/_error_alert.sass */
-.alert-container .alert-content .alert-description {
+#error-alert-container .alert-content .alert-description {
   color: rgba(255, 0, 0, 0.6);
+  font-weight: normal;
+}
+
+/* line 1, D:/Projects/htmlCSS/credit-locus/sass/modules/_success_alert.sass */
+#success-alert-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 128, 0, 0.2);
+  border-bottom: 3px solid rgba(0, 128, 0, 0.3);
+  padding: 15px;
+  position: absolute;
+  top: 100px;
+  right: 2%;
+  border-radius: 5px;
+}
+
+/* line 11, D:/Projects/htmlCSS/credit-locus/sass/modules/_success_alert.sass */
+#success-alert-container .alert-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 15, D:/Projects/htmlCSS/credit-locus/sass/modules/_success_alert.sass */
+#success-alert-container .alert-icon span {
+  border: 2px solid rgba(0, 128, 0, 0.5);
+  border-radius: 50%;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+}
+
+/* line 22, D:/Projects/htmlCSS/credit-locus/sass/modules/_success_alert.sass */
+#success-alert-container .alert-icon span img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 25px;
+  width: 25px;
+}
+
+/* line 29, D:/Projects/htmlCSS/credit-locus/sass/modules/_success_alert.sass */
+#success-alert-container .alert-content {
+  margin-left: 15px;
+}
+
+/* line 31, D:/Projects/htmlCSS/credit-locus/sass/modules/_success_alert.sass */
+#success-alert-container .alert-content .alert-title {
+  color: rgba(0, 128, 0, 0.8);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* line 35, D:/Projects/htmlCSS/credit-locus/sass/modules/_success_alert.sass */
+#success-alert-container .alert-content .alert-description {
+  color: rgba(0, 128, 0, 0.6);
   font-weight: normal;
 }
 
