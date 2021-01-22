@@ -133,7 +133,7 @@
 
 @font-face {
   font-family: "Matter";
-  src: url("../assets/fonts/Matter/Matter-Bold.woff2") format("woff2");
+  src: local("Matter"), url("../assets/fonts/Matter/Matter-Bold.woff2") format("woff2");
   src: url("../assets/fonts/Matter/Matter-Bold.woff") format("woff");
   font-display: block;
 }
