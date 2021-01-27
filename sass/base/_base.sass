@@ -31,7 +31,7 @@ body
     display: none
     .close-btn
       position: absolute
-      top: 36%
+      top: 36.5%
       right: 50%
       background-color: #fff
       border-radius: 50%
@@ -39,10 +39,11 @@ body
       z-index: 350
       transform: translateX(50%)
       a
-        img
+        svg
           height: 20px
           width: 20px
           z-index: 200
+          stroke: $primary
 
 *
   box-sizing: border-box
@@ -77,6 +78,13 @@ section
   display: flex
   flex-direction: column
   justify-content: center
+
+
+@media screen and (max-width: 380px)
+  body
+    .overlay
+      .close-btn
+        top: 38%
 
 
 @media screen and (min-width: 1280px)
