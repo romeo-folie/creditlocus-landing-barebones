@@ -482,7 +482,7 @@ section.intro .intro-content .image-right img {
   }
   /* line 85, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   /* line 87, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left .email-input {
@@ -518,7 +518,7 @@ section.intro .intro-content .image-right img {
   }
   /* line 114, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -529,7 +529,7 @@ section.intro .intro-content .image-right img {
   }
   /* line 123, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h4 {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
   }
   /* line 126, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left .email-input a.join-btn {
@@ -548,7 +548,7 @@ section.intro .intro-content .image-right img {
   }
   /* line 138, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h4 {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
   }
   /* line 141, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left .email-input a.join-btn {
@@ -568,7 +568,7 @@ section.intro .intro-content .image-right img {
   }
   /* line 154, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   /* line 157, D:/Projects/htmlCSS/credit-locus/sass/layouts/_intro-section.sass */
   section.intro .intro-content .text-left .email-input a.join-btn {
@@ -876,7 +876,7 @@ section.loans .loans-content .video-container {
   -webkit-box-shadow: 0px 10px 11px -1px rgba(31, 17, 123, 0.1);
   -moz-box-shadow: 0px 10px 11px -1px rgba(31, 17, 123, 0.1);
   box-shadow: 0px 10px 11px -1px rgba(31, 17, 123, 0.1);
-  display: none;
+  visibility: hidden;
 }
 
 /* line 70, D:/Projects/htmlCSS/credit-locus/sass/layouts/_loans-section.sass */
@@ -2165,7 +2165,7 @@ section.company-info .company-info-content h5 {
 /* line 1, D:/Projects/htmlCSS/credit-locus/sass/layouts/_aside.sass */
 .side-menu {
   height: 100vh;
-  background-color: #fff;
+  background-color: #372865;
   position: fixed;
   width: 0;
   right: -50px;
@@ -2210,7 +2210,7 @@ section.company-info .company-info-content h5 {
 
 /* line 31, D:/Projects/htmlCSS/credit-locus/sass/layouts/_aside.sass */
 .side-menu .aside-content-wrapper .side-navbar ul li a {
-  color: #372865;
+  color: #fff;
   font-size: 1.0rem;
 }
 
@@ -2241,7 +2241,7 @@ section.company-info .company-info-content h5 {
 .side-menu.show {
   visibility: initial;
   right: 0;
-  width: 65vw;
+  width: 100vw;
 }
 
 @media screen and (min-width: 640px) {
