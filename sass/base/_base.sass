@@ -20,6 +20,8 @@ body
   box-sizing: border-box
   overflow-x: hidden
   position: relative
+  -webkit-tap-highlight-color: transparent
+  line-height: normal
   .overlay
     position: absolute
     top: 0
@@ -67,6 +69,7 @@ a
   text-decoration: none
   font-size: 1.0rem
   font-weight: 700
+  outline: none
   &:focus
     outline: none
   &:active
@@ -79,6 +82,8 @@ section
   flex-direction: column
   justify-content: center
 
+div.content-wrapper
+  overflow-x: hidden
 
 @media screen and (max-width: 380px)
   body
