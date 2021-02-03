@@ -74,6 +74,14 @@ section.offer
         font-size: 1.2rem
         font-weight: 500
         color: $sub-text
+      .bank-slider
+        display: flex
+        align-items: center
+        margin-top: 50px
+        max-width: 50%
+        overflow-x: hidden
+        img
+          height: 40px
 
 
 @media screen and (max-width: 1000px)
@@ -92,6 +100,11 @@ section.offer
       .text-right
         margin-top: 50px
         text-align: center
+        .bank-slider
+          max-width: 55%
+          margin-left: auto
+          margin-right: auto
+          justify-content: center
 
 @media screen and (max-width: 600px)
   section.offer
@@ -110,6 +123,13 @@ section.offer
       .text-right
         h3
           font-size: 2.2rem
+
+@media screen and (max-width: 599px)
+  section.offer
+      .offer-content
+        .text-right
+          .bank-slider
+            max-width: 100%
 
 @media screen and (min-width: 1300px)
   section.offer

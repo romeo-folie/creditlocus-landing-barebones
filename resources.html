@@ -1,72 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/app.css">
-  <title>Resources</title>
-</head>
-<body>
-  <header class='top-nav'>
-    <nav class='navbar'>
-      <div class="left-items">
-        <div class="brand">
-          <a href="#">
-            <img src="assets/images/brand.png" alt="credit locus logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/app.css" />
+    <title>Resources</title>
+  </head>
+  <body>
+    <header class="top-nav">
+      <nav class="navbar">
+        <div class="left-items">
+          <div class="brand">
+            <a href="#">
+              <img src="assets/images/brand.png" alt="credit locus logo" />
+            </a>
+          </div>
+
+          <ul class="navlist">
+            <li><a class="nav-link" href="">How it works</a></li>
+            <li><a class="nav-link" href="">Resources</a></li>
+            <li><a class="nav-link" href="">About</a></li>
+          </ul>
+        </div>
+
+        <div class="right-items">
+          <ul class="navlist">
+            <li><a href="" class="nav-link">Login</a></li>
+            <li><a href="" id="sign-up-btn">Sign up</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown-menu">
+          <a class="dropdown-link"  href="javascript:void(0);" onclick="showSideNav()"><img src="assets/icons/menu.svg" alt="menu_icon"></a>
+        </div>
+      </nav>
+    </header>
+
+    <aside class="side-menu" id="side-nav">
+      <div class="aside-content-wrapper">
+        <div class="btn-container">
+          <a href="javascript:void(0);" onclick="hideSideNav()">
+            <img src="assets/icons/x.svg" alt="close_icon">
           </a>
         </div>
-        
-        <ul class="navlist">
-          <li><a class="nav-link" href="">How it works</a></li>
-          <li><a class="nav-link" href="">Resources</a></li>
-          <li><a class="nav-link" href="">About</a></li>
-        </ul>
+  
+        <nav class="side-navbar">
+          <ul class="side-navlist">
+            <li> <a class="nav-link" href="#" onclick="hideSideNav()">How it works</a></li>
+            <li> <a class="nav-link" href="#" onclick="hideSideNav()">Resources</a></li>
+            <li> <a class="nav-link" href="#" onclick="hideSideNav()">About</a></li>
+          </ul>
+        </nav>
       </div>
+    </aside>
 
-      <div class="right-items">
-        <ul class="navlist">
-          <li><a href="" class="nav-link">Login</a></li>
-          <li><a href="" id="sign-up-btn">Sign up</a></li>
-        </ul>
-      </div>
+    <div class="content-wrapper">
+      <section class="blog">
+        <div class="blog-content">
+          <h3>Resources</h3>
 
-      <div class="dropdown-menu">
-        <a class="dropdown-link"  href="javascript:void(0);"><img src="assets/icons/menu.svg" alt="menu_icon"></a>
-      </div>
-    </nav>
-  </header>
+          <div class="filter-bar">
+            <div class="filter-bar-content">
+              <div class="search-container">
+                <img src="assets/icons/search.svg" alt="Search Icon" />
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Keyword"
+                />
+                <div class="vertical-line"></div>
+              </div>
 
-  <div class="content-wrapper">
-    <section class="blog">
-      <div class="blog-content">
-        <h3>Resources</h3>
+              <!-- <div class="select-container">
+                <select name="filter" id="filter">
+                  <option value="">All</option>
+                  <option value="">Category A</option>
+                  <option value="">Category B</option>
+                  <option value="">Category B</option>
+                </select>
+              </div> -->
 
-        <div class="filter-bar">
-          <div class="filter-bar-content">
+              <div class="custom-select-container">
+                  <button class="custom-select-trigger" onclick="toggleDropdown()">
+                    <span>Categories</span>
+                    <svg
+                      fill="none"
+                      viewBox="0 0 10 6"
+                      class="styles_arrow__2ystB"
+                    >
+                      <path
+                        fill="#372865"
+                        d="M5.06 5.783L.82.299h8.481l-4.24 5.484z"
+                      ></path>
+                    </svg>
+                  </button>
+  
+                  <div class="dropdown-list">
+                    <ul>
+                      <li class="custom-option selected" data-value="category_a">
+                        Category A
+                      </li>
+                      <li class="custom-option" data-value="category_b">
+                        Category B
+                      </li>
+                      <li class="custom-option" data-value="category_c">
+                        Category C
+                      </li>
+                      <li class="custom-option" data-value="category_d">
+                        Category D
+                      </li>
+                    </ul>
+                  </div>
+              </div>
 
-            <div class="search-container">
-              <img src="assets/icons/search.svg" alt="Search Icon">
-              <input type="text" name="search" id="search" placeholder="Keyword">
-              <div class="vertical-line"></div>
-            </div>
+              <div class="button-container">
+                <a href="#" class="search-btn">
+                  <img src="assets/icons/find.svg" alt="Search Icon" />
+                  <span>Search</span>
+                </a>
+              </div>
 
-            <div class="select-container">
-              <select name="filter" id="filter">
-                <option value="">All</option>
-                <option value="">Category A</option>
-                <option value="">Category B</option>
-                <option value="">Category B</option>
-              </select>
-            </div>
-
-            <div class="button-container">
-              <a href="#" class="search-btn">
-                <img src="assets/icons/find.svg" alt="Search Icon">
-                <span>Search</span>  
-              </a>
-            </div>
-          
-            <!-- <div class="input-container">
+              <!-- <div class="input-container">
 
               <select name="filter" id="filter">
                 <option value="">All</option>
@@ -77,139 +132,169 @@
               <a href="#" class="search-btn">Filter</a>
             </div> -->
 
-            <!-- <div class="input-container">
+              <!-- <div class="input-container">
               <input type="text" name="search" id="search" placeholder="Keyword">
               <a href="#" class="search-btn">Search</a>
             </div> -->
-          </div>
-
-        </div>
-        <!-- Style post item anew -->
-        <!-- Add a grid wrapper to these posts. Make pretty mini cards to fill up grid -->
-        <div class="post-wrapper">
-
-
-          <div class="post">
-            <div class="image-container">
-              <img src="assets/images/carousel/7.jpg" alt="">
-            </div>
-            <div class="text-container">
-              <div class="line-one">
-                <span id="cat">Category</span>
-                <span>December 23</span>
-              </div>
-              <div class="article-content">
-                <h4>This is supposed to be an awesome article title.</h4>
-                <p>This is supposed to be some of the content of the aforementioned awesome article.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita qui nihil commodi, est corporis architecto provident in veritatis odio quaerat?
-                </p>
-              </div>
-              <a href="#" id='more'>Read more</a>
-            </div>  
-          </div>
-
-          <div class="post">
-            <div class="image-container">
-              <img src="assets/images/carousel/6.jpg" alt="">
-            </div>
-          <div class="text-container">
-            <div class="line-one">
-              <span id="cat">Category</span>
-              <span>December 23</span>
-            </div>
-            <div class="article-content">
-              <h4>This is supposed to be an awesome article title.</h4>
-              <p>This is supposed to be some of the content of the aforementioned awesome article.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita qui nihil commodi, est corporis architecto provident in veritatis odio quaerat?
-              </p>
-            </div>
-            <a href="#" id='more'>Read more</a>
-          </div>
-          </div>
-
-          <div class="post">
-            <div class="image-container">
-              <img src="assets/images/carousel/5.jpg" alt="">
-            </div>
-            <div class="text-container">
-              <div class="line-one">
-                <span id="cat">Category</span>
-                <span>December 23</span>
-              </div>
-              <div class="article-content">
-                <h4>This is supposed to be an awesome article title.</h4>
-                <p>This is supposed to be some of the content of the aforementioned awesome article.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita qui nihil commodi, est corporis architecto provident in veritatis odio quaerat?
-                </p>
-              </div>
-              <a href="#" id='more'>Read more</a>
             </div>
           </div>
-        
-          <div class="post">
+          <!-- Style post item anew -->
+          <!-- Add a grid wrapper to these posts. Make pretty mini cards to fill up grid -->
+          <div class="post-wrapper">
+            <div class="post">
               <div class="image-container">
-                <img src="assets/images/cf-small.jpg" alt="">
+                <img src="assets/images/carousel/7.jpg" alt="" />
               </div>
-            <div class="text-container">
-              <div class="line-one">
-                <span id="cat">Category</span>
-                <span>December 23</span>
+              <div class="text-container">
+                <div class="line-one">
+                  <span id="cat">Category</span>
+                  <span>December 23</span>
+                </div>
+                <div class="article-content">
+                  <h4>This is supposed to be an awesome article title.</h4>
+                  <p>
+                    This is supposed to be some of the content of the
+                    aforementioned awesome article. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Expedita qui nihil commodi,
+                    est corporis architecto provident in veritatis odio quaerat?
+                  </p>
+                </div>
+                <a href="#" id="more">Read more</a>
               </div>
-              <div class="article-content">
-                <h4>This is supposed to be an awesome article title.</h4>
-                <p>This is supposed to be some of the content of the aforementioned awesome article.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita qui nihil commodi, est corporis architecto provident in veritatis odio quaerat?
-                </p>
+            </div>
+
+            <div class="post">
+              <div class="image-container">
+                <img src="assets/images/carousel/6.jpg" alt="" />
               </div>
-              <a href="#" id='more'>Read more</a>
+              <div class="text-container">
+                <div class="line-one">
+                  <span id="cat">Category</span>
+                  <span>December 23</span>
+                </div>
+                <div class="article-content">
+                  <h4>This is supposed to be an awesome article title.</h4>
+                  <p>
+                    This is supposed to be some of the content of the
+                    aforementioned awesome article. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Expedita qui nihil commodi,
+                    est corporis architecto provident in veritatis odio quaerat?
+                  </p>
+                </div>
+                <a href="#" id="more">Read more</a>
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="image-container">
+                <img src="assets/images/carousel/5.jpg" alt="" />
+              </div>
+              <div class="text-container">
+                <div class="line-one">
+                  <span id="cat">Category</span>
+                  <span>December 23</span>
+                </div>
+                <div class="article-content">
+                  <h4>This is supposed to be an awesome article title.</h4>
+                  <p>
+                    This is supposed to be some of the content of the
+                    aforementioned awesome article. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Expedita qui nihil commodi,
+                    est corporis architecto provident in veritatis odio quaerat?
+                  </p>
+                </div>
+                <a href="#" id="more">Read more</a>
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="image-container">
+                <img src="assets/images/cf-small.jpg" alt="" />
+              </div>
+              <div class="text-container">
+                <div class="line-one">
+                  <span id="cat">Category</span>
+                  <span>December 23</span>
+                </div>
+                <div class="article-content">
+                  <h4>This is supposed to be an awesome article title.</h4>
+                  <p>
+                    This is supposed to be some of the content of the
+                    aforementioned awesome article. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Expedita qui nihil commodi,
+                    est corporis architecto provident in veritatis odio quaerat?
+                  </p>
+                </div>
+                <a href="#" id="more">Read more</a>
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="image-container">
+                <img src="assets/images/carousel/8.jpg" alt="" />
+              </div>
+              <div class="text-container">
+                <div class="line-one">
+                  <span id="cat">Category</span>
+                  <span>December 23</span>
+                </div>
+                <div class="article-content">
+                  <h4>This is supposed to be an awesome article title.</h4>
+                  <p>
+                    This is supposed to be some of the content of the
+                    aforementioned awesome article. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Expedita qui nihil commodi,
+                    est corporis architecto provident in veritatis odio quaerat?
+                  </p>
+                </div>
+                <a href="#" id="more">Read more</a>
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="image-container">
+                <img src="assets/images/carousel/2.jpg" alt="" />
+              </div>
+              <div class="text-container">
+                <div class="line-one">
+                  <span id="cat">Category</span>
+                  <span>December 23</span>
+                </div>
+                <div class="article-content">
+                  <h4>This is supposed to be an awesome article title.</h4>
+                  <p>
+                    This is supposed to be some of the content of the
+                    aforementioned awesome article. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Expedita qui nihil commodi,
+                    est corporis architecto provident in veritatis odio quaerat?
+                  </p>
+                </div>
+                <a href="#" id="more">Read more</a>
+              </div>
             </div>
           </div>
 
-          <div class="post">
-            <div class="image-container">
-              <img src="assets/images/carousel/8.jpg" alt="">
-            </div>
-            <div class="text-container">
-              <div class="line-one">
-                <span id="cat">Category</span>
-                <span>December 23</span>
-              </div>
-              <div class="article-content">
-                <h4>This is supposed to be an awesome article title.</h4>
-                <p>This is supposed to be some of the content of the aforementioned awesome article.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita qui nihil commodi, est corporis architecto provident in veritatis odio quaerat?
-                </p>
-              </div>
-              <a href="#" id='more'>Read more</a>
-            </div>
-          </div>
+          <!-- Add See More button -->
+          <button id="see-more">
+            See more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#372865"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-arrow-down"
+            >
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </button>
 
-          <div class="post">
-            <div class="image-container">
-              <img src="assets/images/carousel/2.jpg" alt="">
-            </div>
-            <div class="text-container">
-              <div class="line-one">
-                <span id="cat">Category</span>
-                <span>December 23</span>
-              </div>
-              <div class="article-content">
-                <h4>This is supposed to be an awesome article title.</h4>
-                <p>This is supposed to be some of the content of the aforementioned awesome article.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita qui nihil commodi, est corporis architecto provident in veritatis odio quaerat?
-                </p>
-              </div>
-              <a href="#" id='more'>Read more</a>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Add See More button -->
-        <button id="see-more">See more <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#372865" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></button>
-
-
-        <!-- <div class="pagination">
+          <!-- <div class="pagination">
           <a href="#">Previous</a>
           <a href="#">1</a>
           <a href="#" class="active">2</a>
@@ -217,53 +302,52 @@
           <a href="#">4</a>
           <a href="#">Next</a>
         </div>  -->
-
-
-      </div>
-    </section>
-  </div>
-
-  <footer class="bottom-nav">
-    <div class="bottom-nav-content">
-      <div class="link-grid">
-        <div class="column">
-          <h4>Solutions</h4>
-          <a href="">Open an account</a>
-          <a href="">How it works</a>
-          <a href="">Resources</a>
         </div>
-
-        <div class="column">
-          <h4>Company</h4>
-          <a href="">About</a>
-          <a href="">Careers</a>
-          <a href="">Press</a>
-        </div>
-
-        <div class="column">
-          <h4>Legal</h4>
-          <a href="">Privacy Policy</a>
-          <a href="">Terms & Conditions</a>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="final-line">
-        <div class="company">
-        <span id="copyright"> &#169;</span>
-        <span>2020 Credit Locus Limited</span>
-        </div>
-        
-        <div class="social-media">
-          <img src="assets/icons/facebook.svg" alt="">
-          <img src="assets/icons/twitter.svg" alt="">
-          <img src="assets/icons/instagram.svg" alt="">
-          <img src="assets/icons/linkedin.svg" alt="">
-        </div>
-      </div>
+      </section>
     </div>
-  </footer>
 
-</body>
+    <footer class="bottom-nav">
+      <div class="bottom-nav-content">
+        <div class="link-grid">
+          <div class="column">
+            <h4>Solutions</h4>
+            <a href="">Open an account</a>
+            <a href="">How it works</a>
+            <a href="">Resources</a>
+          </div>
+
+          <div class="column">
+            <h4>Company</h4>
+            <a href="">About</a>
+            <a href="">Careers</a>
+            <a href="">Press</a>
+          </div>
+
+          <div class="column">
+            <h4>Legal</h4>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Conditions</a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="final-line">
+          <div class="company">
+            <span id="copyright"> &#169;</span>
+            <span>2020 Credit Locus Limited</span>
+          </div>
+
+          <div class="social-media">
+            <img src="assets/icons/facebook.svg" alt="" />
+            <img src="assets/icons/twitter.svg" alt="" />
+            <img src="assets/icons/instagram.svg" alt="" />
+            <img src="assets/icons/linkedin.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
 </html>
