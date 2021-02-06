@@ -5,6 +5,12 @@
   font-display: block
 
 @font-face
+  font-family: "Matter-Heavy"
+  src: local("Matter-Heavy"), url("../assets/fonts/Matter/Matter-Heavy.woff2") format("woff2")
+  src: local("Matter-Heavy"), url("../assets/fonts/Matter/Matter-Heavy.woff") format("woff")
+  font-display: block
+
+@font-face
   font-family: "DM Sans"
   src: local("DM Sans"), url("../assets/fonts/DMSans/DMSans-Regular.woff2") format("woff2")
   src: local("DM Sans"), url("../assets/fonts/DMSans/DMSans-Regular.woff") format("woff")
@@ -51,7 +57,8 @@ body
   box-sizing: border-box
   
 h2,h3
-  font-family: 'Matter'
+  font-family: 'Matter-Heavy'
+  font-weight: normal
 
 button
   font-family: 'DM Sans'

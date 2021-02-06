@@ -8,6 +8,7 @@ section.intro
     max-width: 1240px
     .text-left
       h2
+        font-family: 'Matter-Heavy'
         font-size: 4.2rem
         color: $primary
         margin-top: 25px
@@ -110,7 +111,38 @@ section.intro
     .intro-content
       .text-left
         h2
-          font-size: 2.5rem      
+          font-size: 2.5rem  
+
+@media screen and (max-width: 340px)
+  section.intro
+    .intro-content
+      text-align: center
+      .text-left
+        h2
+          font-size: 2.0rem
+        h4
+          font-size: 1.1rem
+        .email-input
+          position: static
+          width: 100%
+          height: 120px
+          flex-direction: column
+          align-items: center
+          text-align: center
+          input
+            font-size: 0.9rem
+            padding: 0 15px
+            text-align: center
+            height: 60px
+          a.join-btn
+            position: static
+            font-size: 0.9rem
+            width: 70%
+            margin: 0 auto
+            margin-top: 20px
+            height: 50px
+      .image-right
+        display: none
 
 @media screen and (min-width: 554px)
   section.intro
