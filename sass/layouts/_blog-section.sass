@@ -294,6 +294,15 @@ section.blog
         
 
 
+@media screen and (max-width: 1000px)
+  section.blog
+    .blog-content
+      .filter-bar
+        .filter-bar-content
+          .search-container
+          .select-container
+            display: none
+          
 
 @media screen and (max-width: 640px)
   section.blog
@@ -301,7 +310,11 @@ section.blog
       .filter-bar
         width: 100%
         .filter-bar-content
+          .search-container
+            img
+              display: none
           .button-container
+            flex: 0.3
             a.search-btn
               img
                 display: block
