@@ -51,11 +51,28 @@ section.intro
           text-align: center
           height: 100%
           font-size: 1.0rem
+          span.text
+            color: #fff
+          span.loading
+            display: flex
+            justify-content: center
+            &::after
+              content: ""
+              width: 20px
+              height: 20px
+              border: 3px solid transparent
+              border-top-color: #ffffff
+              border-right-color: #ffffff
+              border-radius: 50%
+              animation: loading 1s ease infinite
     .image-right
       max-width: 53%
       img
         height: 650px
 
+@keyframes loading
+  to
+    transform: rotate(1turn)
 
 @media screen and (max-width: 949px)
   section.intro
